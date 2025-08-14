@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "PoppinsExtraLight";
+  src: url(./assets/font/Poppins-ExtraLight.ttf);
+}
+
+@font-face {
+  font-family: "PoppinsLight";
+  src: url(./assets/font/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: "PoppinsRegular";
+  src: url(./assets/font/Poppins-Regular.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "PoppinsRegular";
+}

@@ -1,0 +1,64 @@
+:root {
+    --bgbtn: #f5f5f5;
+    --grayClr: #32314259;
+}
+
+section {
+    padding: 10px;
+    min-height: 100vh;
+}
+
+section main article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section main article .auth {
+    text-align: center;
+}
+
+section main article .auth form label {
+    background: var(--bgbtn);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+section main article .auth form label input {
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+section main article .auth form label input:last-of-type {
+    margin-top: 15px;
+}
+
+section main article .auth form label,
+input {
+    width: 100%;
+}
+
+section main article span {
+    color: var(--grayClr);
+    text-align: center;
+    display: block;
+    margin-block: 10px;
+}
+
+section main article .auth-providers {
+    display: flex;
+    gap: 7px;
+}
+
+section main article .auth-providers button {
+    background: var(--bgbtn);
+    border: none;
+    width: 50%;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+section main .auth {
+    width: 25%;
+}
