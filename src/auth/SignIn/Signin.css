@@ -93,7 +93,7 @@ section main article .auth form button {
     border-radius: 15.56px;
 }
 
-section main article span {
+section main article .auth > span {
     color: var(--grayClr);
     text-align: center;
     display: block;
@@ -141,4 +141,40 @@ section footer p {
 section footer a {
     text-decoration: none;
     color: var(--grayClr);
+}
+
+@media screen and (max-width: 767px) {
+    section {
+        padding: 20px;
+    }
+    section main .auth {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+    section {
+        padding: 20px;
+    }
+    section main .auth {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 991px) and (max-width: 1023px) {
+    section {
+        padding: 20px;
+    }
+    section main .auth {
+        width: 40%;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    section {
+        padding: 20px;
+    }
+    section main .auth {
+        width: 30%;
+    }
 }

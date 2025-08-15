@@ -1,14 +1,27 @@
+import { memo, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import logo from "../../assets/images/logo.svg";
-import google from "../../assets/images/google.svg";
-import apple from "../../assets/images/apple.svg";
 import "./Signin.css";
 import EmailIcon from "../../assets/images/email";
 import LockIcon from "../../assets/images/Lock";
 import { Link } from "react-router-dom";
 import EyeIcon from "../../assets/images/eye";
+import AppleIcon from "../../assets/images/apple";
+import OpenEyeIcon from "../../assets/images/openEye";
+import GoogleIcon from "../../assets/images/google";
 
 const Signin = () => {
+  const [email, setEmail] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
+  const [show, setShow] = useState<boolean>(false);
+
+  const toggle = () => {
+    setShow((prev) => !prev);
+  };
+  console.log(show);
+
+  console.log(`email: ${email} password: ${password}`);
+
   return (
     <>
       <Helmet>
@@ -28,27 +41,38 @@ const Signin = () => {
               <h1>Sign In To DiveSea</h1>
               <div className="auth-providers">
                 <button aria-label="google">
-                  <img src={google} alt="apple" loading="lazy" />
+                  <GoogleIcon size={25} />
                 </button>
                 <button aria-label="apple">
-                  <img src={apple} alt="apple" loading="lazy" />
+                  <AppleIcon size={25} />
                 </button>
               </div>
               <span>OR</span>
               <form action="" onSubmit={(e) => e.preventDefault()}>
                 <label htmlFor="email">
                   <EmailIcon size={25} />
-                  <input type="email" placeholder="Email" id="email" required />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    id="email"
+                    required
+                    title="Email"
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
                 </label>
                 <label htmlFor="password">
                   <LockIcon size={25} />
                   <input
-                    type="text"
+                    type={show ? "text" : "password"}
                     placeholder="Password"
                     id="password"
                     required
+                    title="Password"
+                    onChange={(e) => setPassword(e.target.value)}
                   />
-                  <EyeIcon size={25} />
+                  <span onClick={toggle}>
+                    {show ? <EyeIcon size={25} /> : <OpenEyeIcon size={25} />}
+                  </span>
                 </label>
                 <Link to={"/reser-password"}>Forget Password ?</Link>
                 <button aria-label="signin">Sign in</button>
@@ -68,4 +92,4 @@ const Signin = () => {
   );
 };
 
-export default Signin;
+export default memo(Signin);
