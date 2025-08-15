@@ -6,22 +6,13 @@
 
 section {
     padding: 15px 35px;
-    min-height: 100vh;
+    min-height: 80vh;
     display: grid;
-}
-
-section header {
-    display: flex;
-    align-items: center;
-}
-
-section header img {
-    cursor: pointer;
 }
 
 section main {
     width: 100%;
-    min-height: 80vh;
+    min-height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,10 +105,6 @@ section main article .auth-providers button {
     cursor: pointer;
 }
 
-section main .auth {
-    width: 23%;
-}
-
 section main .auth a {
     text-decoration: none;
     color: black;
@@ -125,22 +112,6 @@ section main .auth a {
     display: block;
     padding-block: 10px;
     text-align: end;
-}
-
-section footer {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-section footer p {
-    padding: 0;
-}
-
-section footer a {
-    text-decoration: none;
-    color: var(--grayClr);
 }
 
 @media screen and (max-width: 767px) {

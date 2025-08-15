@@ -1,6 +1,4 @@
 import { memo, useState } from "react";
-import { Helmet } from "react-helmet-async";
-import logo from "../../assets/images/logo.svg";
 import "./Signin.css";
 import EmailIcon from "../../assets/images/email";
 import LockIcon from "../../assets/images/Lock";
@@ -24,17 +22,7 @@ const Signin = () => {
 
   return (
     <>
-      <Helmet>
-        <title>DiveSea - Signin</title>
-        <meta name="description" content="Here you can sign in" />
-        <meta property="og:title" content="Signin" />
-      </Helmet>
       <section>
-        <header>
-          <a href="/" aria-label="company logo">
-            <img src={logo} alt="company logo" width={40} loading="lazy" />
-          </a>
-        </header>
         <main>
           <article>
             <div className="auth">
@@ -74,19 +62,15 @@ const Signin = () => {
                     {show ? <EyeIcon size={25} /> : <OpenEyeIcon size={25} />}
                   </span>
                 </label>
-                <Link to={"/reser-password"}>Forget Password ?</Link>
+                <Link to={"reset-password"}>Forget Password ?</Link>
                 <button aria-label="signin">Sign in</button>
                 <p>
-                  Create A New Account? <Link to={"/signin"}>Sign Up</Link>
+                  Create A New Account? <Link to={"/signup"}>Sign Up</Link>
                 </p>
               </form>
             </div>
           </article>
         </main>
-        <footer>
-          <Link to={"/privacy"}>Privacy Policy</Link>
-          <p>Copyright 2022</p>
-        </footer>
       </section>
     </>
   );
