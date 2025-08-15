@@ -42,6 +42,11 @@ section main article .auth form label {
     gap: 5px;
 }
 
+section main article .auth form label span {
+    display: flex;
+    align-items: center;
+}
+
 section main article .auth form p {
     display: flex;
     align-items: center;
