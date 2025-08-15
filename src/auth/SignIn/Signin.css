@@ -1,14 +1,34 @@
 :root {
     --bgbtn: #f5f5f5;
-    --grayClr: #32314259;
+    -blackclr: black;
+    --bgBtn: #141416;
 }
 
 section {
-    padding: 10px;
+    padding: 15px 35px;
     min-height: 100vh;
+    display: grid;
+}
+
+section header {
+    display: flex;
+    align-items: center;
+}
+
+section header img {
+    cursor: pointer;
+}
+
+section main {
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 section main article {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,10 +38,28 @@ section main article .auth {
     text-align: center;
 }
 
+section main article .auth h1 {
+    font-size: 1.5rem;
+}
+
 section main article .auth form label {
     background: var(--bgbtn);
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+section main article .auth form p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+section main article .auth form p a {
+    font-weight: 600;
 }
 
 section main article .auth form label input {
@@ -30,7 +68,12 @@ section main article .auth form label input {
     background: transparent;
 }
 
-section main article .auth form label input:last-of-type {
+section main article .auth form label input::placeholder {
+    color: var(--grayClr);
+    font-size: 15px;
+}
+
+section main article .auth form label:last-of-type {
     margin-top: 15px;
 }
 
@@ -39,11 +82,22 @@ input {
     width: 100%;
 }
 
+section main article .auth form button {
+    background-color: var(--bgBtn);
+    color: #f3f5f6;
+    width: 100%;
+    padding-block: 15px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 15.56px;
+}
+
 section main article span {
     color: var(--grayClr);
     text-align: center;
     display: block;
-    margin-block: 10px;
+    margin-block: 20px;
 }
 
 section main article .auth-providers {
@@ -55,10 +109,36 @@ section main article .auth-providers button {
     background: var(--bgbtn);
     border: none;
     width: 50%;
-    padding: 5px;
+    padding: 8px 5px;
     border-radius: 8px;
+    cursor: pointer;
 }
 
 section main .auth {
-    width: 25%;
+    width: 23%;
+}
+
+section main .auth a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    display: block;
+    padding-block: 10px;
+    text-align: end;
+}
+
+section footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section footer p {
+    padding: 0;
+}
+
+section footer a {
+    text-decoration: none;
+    color: var(--grayClr);
 }

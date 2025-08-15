@@ -1,16 +1,16 @@
 @font-face {
   font-family: "PoppinsExtraLight";
-  src: url(./assets/font/Poppins-ExtraLight.ttf);
+  src: url(./assets/font/Poppins-ExtraLight.woff);
 }
 
 @font-face {
   font-family: "PoppinsLight";
-  src: url(./assets/font/Poppins-Light.ttf);
+  src: url(./assets/font/Poppins-Light.woff);
 }
 
 @font-face {
   font-family: "PoppinsRegular";
-  src: url(./assets/font/Poppins-Regular.ttf);
+  src: url(./assets/font/Poppins-Regular.woff);
 }
 
 body {
