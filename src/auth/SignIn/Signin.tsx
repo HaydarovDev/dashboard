@@ -7,6 +7,7 @@ import EyeIcon from "../../assets/images/eye";
 import AppleIcon from "../../assets/images/apple";
 import OpenEyeIcon from "../../assets/images/openEye";
 import GoogleIcon from "../../assets/images/google";
+import Title from "../components/Title/Title";
 
 const Signin = () => {
   const [email, setEmail] = useState<string>("");
@@ -26,7 +27,7 @@ const Signin = () => {
         <main>
           <article>
             <div className="auth">
-              <h1>Sign In To DiveSea</h1>
+              <Title title="Sign In To DiveSea" />
               <div className="auth-providers">
                 <button aria-label="google">
                   <GoogleIcon size={25} />
@@ -62,7 +63,7 @@ const Signin = () => {
                     {show ? <EyeIcon size={25} /> : <OpenEyeIcon size={25} />}
                   </span>
                 </label>
-                <Link to={"reset-password"}>Forget Password ?</Link>
+                <Link to={"/auth/reset-password"}>Forget Password ?</Link>
                 <button aria-label="signin">Sign in</button>
                 <p>
                   Create A New Account? <Link to={"/signup"}>Sign Up</Link>

@@ -4,19 +4,23 @@ import Home from "./Home";
 import Auth from "./auth/layout/Auth";
 import Signup from "./auth/SignUp/Signup";
 import Reset from "./auth/Reset/Reset";
+import { Suspense } from "react";
+import Loader from "./components/Loader/Loader";
 
 const App = () => {
   return (
     <>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/signin" element={<Signin />} />
-        <Route path="/auth" element={<Auth />}>
-          <Route index element={<Signin />} />
-          <Route path="signup" element={<Signup />} />
-          <Route path="reset-password" element={<Reset />} />
-        </Route>
-      </Routes>
+      <Suspense fallback={<Loader />}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/auth" element={<Auth />}>
+            <Route index element={<Signin />} />
+            <Route path="signup" element={<Signup />} />
+            <Route path="reset-password" element={<Reset />} />
+          </Route>
+        </Routes>
+      </Suspense>
     </>
   );
 };

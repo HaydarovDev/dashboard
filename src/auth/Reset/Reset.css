@@ -1,0 +1,11 @@
+section main article .auth p {
+    color: #cfcfd3;
+}
+
+section main article .auth form {
+    margin-top: 50px;
+}
+
+section main article .auth form button {
+    margin-top: 25px;
+}
