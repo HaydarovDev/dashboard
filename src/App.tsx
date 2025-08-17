@@ -6,6 +6,7 @@ import Signup from "./auth/SignUp/Signup";
 import Reset from "./auth/Reset/Reset";
 import { Suspense } from "react";
 import Loader from "./components/Loader/Loader";
+import Verify from "./auth/Verify/Verify";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
             <Route index element={<Signin />} />
             <Route path="signup" element={<Signup />} />
             <Route path="reset-password" element={<Reset />} />
+            <Route path="verify" element={<Verify />} />
           </Route>
         </Routes>
       </Suspense>

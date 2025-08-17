@@ -1,0 +1,21 @@
+section main article .auth form input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+section main article .auth form .otpInputs {
+    display: flex;
+    gap: 10px;
+}
+
+section main article .auth form .otpInputs input {
+    border: none;
+    border-bottom: 2px solid #cbcbcb;
+    outline: none;
+    text-align: center;
+    font-size: xx-large;
+}
+
+section main article .auth form .otpInputs input:focus {
+    border-bottom: 2px solid black;
+}

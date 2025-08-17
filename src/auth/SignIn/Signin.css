@@ -85,17 +85,6 @@ input {
     width: 100%;
 }
 
-section main article .auth form button {
-    background-color: var(--bgBtn);
-    color: #f3f5f6;
-    width: 100%;
-    padding-block: 15px;
-    font-size: 18px;
-    border: none;
-    cursor: pointer;
-    border-radius: 15.56px;
-}
-
 section main article .auth > span {
     color: var(--grayClr);
     text-align: center;

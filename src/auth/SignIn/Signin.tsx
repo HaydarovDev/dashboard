@@ -8,6 +8,7 @@ import AppleIcon from "../../assets/images/apple";
 import OpenEyeIcon from "../../assets/images/openEye";
 import GoogleIcon from "../../assets/images/google";
 import Title from "../components/Title/Title";
+import Button from "../components/Button/Button";
 
 const Signin = () => {
   const [email, setEmail] = useState<string>("");
@@ -64,7 +65,7 @@ const Signin = () => {
                   </span>
                 </label>
                 <Link to={"/auth/reset-password"}>Forget Password ?</Link>
-                <button aria-label="signin">Sign in</button>
+                <Button title="Sign in" aria="signin" />
                 <p>
                   Create A New Account? <Link to={"/signup"}>Sign Up</Link>
                 </p>

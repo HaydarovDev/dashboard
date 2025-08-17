@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Title from "../components/Title/Title";
 import EmailIcon from "../../assets/images/email";
 import "./Reset.css";
+import Button from "../components/Button/Button";
 
 const Reset = () => {
   const [email, setEmail] = useState<string>("");
@@ -35,7 +36,7 @@ const Reset = () => {
                     onChange={(e) => setEmail(e.target.value)}
                   />
                 </label>
-                <button>Verify</button>
+                <Button title="Verify" aria="verify" />
               </form>
             </div>
           </article>
