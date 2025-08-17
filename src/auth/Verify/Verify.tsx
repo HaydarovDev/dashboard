@@ -1,8 +1,9 @@
 import type React from "react";
-import Button from "../components/Button/Button";
-import Title from "../components/Title/Title";
+
 import "./Verify.css";
 import { useRef } from "react";
+import Title from "../components/Title/Title";
+import Button from "../components/Button/Button";
 
 const Verify = () => {
   const inputs = useRef<(HTMLInputElement | null)[]>([]);
@@ -30,8 +31,8 @@ const Verify = () => {
 
   return (
     <>
-      <section>
-        <main>
+      <main>
+        <section>
           <article>
             <div className="auth">
               <Title title="Verify Email" />
@@ -58,8 +59,8 @@ const Verify = () => {
               </form>
             </div>
           </article>
-        </main>
-      </section>
+        </section>
+      </main>
     </>
   );
 };

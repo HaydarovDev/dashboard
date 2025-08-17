@@ -4,7 +4,7 @@ import Signin from "./auth/SignIn/Signin";
 import Home from "./Home";
 import Auth from "./auth/layout/Auth";
 import Signup from "./auth/SignUp/Signup";
-import Loader from "./components/Loader/Loader";
+import Loader from "./auth/components/Loader/Loader";
 import Verify from "./auth/Verify/Verify";
 import Forget from "./auth/Forget/Forget";
 import Reset from "./auth/ResetPassword/Reset";

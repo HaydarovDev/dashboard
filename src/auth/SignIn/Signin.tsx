@@ -1,18 +1,18 @@
 import { memo } from "react";
 import "./Signin.css";
 import { Link } from "react-router-dom";
-import AppleIcon from "../../assets/images/apple";
-import GoogleIcon from "../../assets/images/google";
 import Title from "../components/Title/Title";
 import Button from "../components/Button/Button";
 import InputPassword from "../components/InputPassword/InputPassword";
 import InputEmail from "../components/InputEmail/InputEmail";
+import GoogleIcon from "../../assets/images/icons/google";
+import AppleIcon from "../../assets/images/icons/apple";
 
 const Signin = () => {
   return (
     <>
-      <section>
-        <main>
+      <main>
+        <section>
           <article>
             <div className="auth">
               <Title title="Sign In To DiveSea" />
@@ -36,8 +36,8 @@ const Signin = () => {
               </form>
             </div>
           </article>
-        </main>
-      </section>
+        </section>
+      </main>
     </>
   );
 };

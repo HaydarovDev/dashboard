@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./InputPassword.css";
-import EyeIcon from "../../../assets/images/eye";
-import LockIcon from "../../../assets/images/Lock";
+import LockIcon from "../../../assets/images/icons/Lock";
+import EyeIcon from "../../../assets/images/icons/eye";
 import OpenEyeIcon from "../../../assets/images/openEye";
 
 type InputProps = {

@@ -4,11 +4,11 @@ import Header from "../components/Header/Header";
 
 const Auth = () => {
   return (
-    <div style={{ padding: "20px 30px" }}>
+    <main style={{ padding: "20px 30px" }}>
       <Header />
       <Outlet />
       <Footer />
-    </div>
+    </main>
   );
 };
 
