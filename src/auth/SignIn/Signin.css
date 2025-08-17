@@ -31,10 +31,6 @@ section main article .auth {
     max-width: 400px;
 }
 
-section main article .auth h1 {
-    font-size: 1.5rem;
-}
-
 section main article .auth form label {
     background: var(--bgbtn);
     border-radius: 10px;
@@ -59,30 +55,6 @@ section main article .auth form p {
 
 section main article .auth form p a {
     font-weight: 600;
-}
-
-section main article .auth form label input {
-    border: none;
-    outline: none;
-    background: transparent;
-}
-
-section main article .auth form label:focus-within {
-    border: 2px solid black;
-}
-
-section main article .auth form label input::placeholder {
-    color: var(--grayClr);
-    font-size: 15px;
-}
-
-section main article .auth form label:last-of-type {
-    margin-top: 15px;
-}
-
-section main article .auth form label,
-input {
-    width: 100%;
 }
 
 section main article .auth > span {

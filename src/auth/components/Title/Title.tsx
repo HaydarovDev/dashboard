@@ -1,3 +1,4 @@
+import "./Title.css";
 const Title = ({ title }: { title: string }) => {
   return (
     <>

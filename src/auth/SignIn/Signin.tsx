@@ -1,27 +1,14 @@
-import { memo, useState } from "react";
+import { memo } from "react";
 import "./Signin.css";
-import EmailIcon from "../../assets/images/email";
-import LockIcon from "../../assets/images/Lock";
 import { Link } from "react-router-dom";
-import EyeIcon from "../../assets/images/eye";
 import AppleIcon from "../../assets/images/apple";
-import OpenEyeIcon from "../../assets/images/openEye";
 import GoogleIcon from "../../assets/images/google";
 import Title from "../components/Title/Title";
 import Button from "../components/Button/Button";
+import InputPassword from "../components/InputPassword/InputPassword";
+import InputEmail from "../components/InputEmail/InputEmail";
 
 const Signin = () => {
-  const [email, setEmail] = useState<string>("");
-  const [password, setPassword] = useState<string>("");
-  const [show, setShow] = useState<boolean>(false);
-
-  const toggle = () => {
-    setShow((prev) => !prev);
-  };
-  console.log(show);
-
-  console.log(`email: ${email} password: ${password}`);
-
   return (
     <>
       <section>
@@ -39,32 +26,9 @@ const Signin = () => {
               </div>
               <span>OR</span>
               <form action="" onSubmit={(e) => e.preventDefault()}>
-                <label htmlFor="email">
-                  <EmailIcon size={25} />
-                  <input
-                    type="email"
-                    placeholder="Email"
-                    id="email"
-                    required
-                    title="Email"
-                    onChange={(e) => setEmail(e.target.value)}
-                  />
-                </label>
-                <label htmlFor="password">
-                  <LockIcon size={25} />
-                  <input
-                    type={show ? "text" : "password"}
-                    placeholder="Password"
-                    id="password"
-                    required
-                    title="Password"
-                    onChange={(e) => setPassword(e.target.value)}
-                  />
-                  <span onClick={toggle}>
-                    {show ? <EyeIcon size={25} /> : <OpenEyeIcon size={25} />}
-                  </span>
-                </label>
-                <Link to={"/auth/reset-password"}>Forget Password ?</Link>
+                <InputEmail />
+                <InputPassword id="signin" placeholderText="Password" />
+                <Link to={"/auth/forget-password"}>Forget Password ?</Link>
                 <Button title="Sign in" aria="signin" />
                 <p>
                   Create A New Account? <Link to={"/signup"}>Sign Up</Link>

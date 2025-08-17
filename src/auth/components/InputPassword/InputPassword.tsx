@@ -1,0 +1,41 @@
+import { useState } from "react";
+import "./InputPassword.css";
+import EyeIcon from "../../../assets/images/eye";
+import LockIcon from "../../../assets/images/Lock";
+import OpenEyeIcon from "../../../assets/images/openEye";
+
+type InputProps = {
+  id: string;
+  placeholderText: string;
+};
+
+const InputPassword = ({ id, placeholderText }: InputProps) => {
+  const [password, setPassword] = useState<string>("");
+  const [show, setShow] = useState<boolean>(false);
+
+  const toggle = () => {
+    setShow((prev) => !prev);
+  };
+
+  return (
+    <>
+      <label htmlFor={id}>
+        <LockIcon size={25} />
+        <input
+          type={show ? "text" : "password"}
+          placeholder={placeholderText}
+          id={id}
+          required
+          value={password}
+          title="Password"
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <span onClick={toggle}>
+          {show ? <EyeIcon size={25} /> : <OpenEyeIcon size={25} />}
+        </span>
+      </label>
+    </>
+  );
+};
+
+export default InputPassword;
