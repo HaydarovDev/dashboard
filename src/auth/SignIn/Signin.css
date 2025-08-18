@@ -41,6 +41,7 @@ main section article .auth form p {
     align-items: center;
     justify-content: center;
     gap: 2px;
+    margin: 0;
 }
 
 main section article .auth form p a {
@@ -65,6 +66,7 @@ main section article .auth-providers button {
     width: 50%;
     padding: 8px 5px;
     border-radius: 8px;
+    margin: 0;
     cursor: pointer;
 }
 
@@ -73,6 +75,6 @@ main section .auth a {
     color: black;
     font-size: 15px;
     display: block;
-    padding-block: 10px;
+    /* padding-block: 10px; */
     text-align: end;
 }

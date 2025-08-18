@@ -1,0 +1,21 @@
+.otpInputs input[type="number"]::-webkit-inner-spin-button,
+.otpInputs input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.otpInputs {
+    display: flex;
+    gap: 10px;
+}
+
+.otpInputs input {
+    border: none;
+    border-bottom: 2px solid #cbcbcb;
+    outline: none;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.otpInputs input:focus {
+    border-bottom: 2px solid black;
+}

@@ -31,7 +31,7 @@ const Signin = () => {
                 <Link to={"/auth/forget-password"}>Forget Password ?</Link>
                 <Button title="Sign in" aria="signin" />
                 <p>
-                  Create A New Account? <Link to={"/signup"}>Sign Up</Link>
+                  Create A New Account? <Link to={"/auth/signup"}>Sign Up</Link>
                 </p>
               </form>
             </div>
