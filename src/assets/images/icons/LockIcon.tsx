@@ -1,4 +1,4 @@
-export type SizeParam = { size: number };
+import type { SizeParam } from "../../../types/icon.types";
 
 const LockIcon = ({ size }: SizeParam) => {
   return (

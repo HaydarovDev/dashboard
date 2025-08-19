@@ -1,4 +1,4 @@
-import type { SizeParam } from "./LockIcon";
+import type { SizeParam } from "../../../types/icon.types";
 
 const EyeIcon = ({ size }: SizeParam) => {
   return (
