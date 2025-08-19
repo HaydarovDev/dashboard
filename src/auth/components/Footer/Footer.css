@@ -6,7 +6,6 @@ footer {
 }
 
 footer p {
-    /* padding: 0; */
     padding: 0 20px;
 }
 
@@ -15,13 +14,3 @@ footer a {
     color: var(--grayClr);
     padding: 0 20px;
 }
-/* 
-@media screen and (max-width: 767px) {
-    footer p {
-        padding: 0;
-    }
-
-    footer a {
-        padding: 0;
-    }
-} */
