@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import AppleIcon from "../../assets/images/icons/apple";
-import GoogleIcon from "../../assets/images/icons/google";
+import AppleIcon from "../../assets/images/icons/AppleIcon";
+import GoogleIcon from "../../assets/images/icons/GoogleIcon";
 import Button from "../components/Button/Button";
 import InputEmail from "../components/InputEmail/InputEmail";
 import InputName from "../components/InputName/InputName";

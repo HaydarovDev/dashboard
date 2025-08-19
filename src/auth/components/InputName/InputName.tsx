@@ -1,5 +1,5 @@
 import { useState } from "react";
-import UserIcon from "../../../assets/images/icons/user";
+import UserIcon from "../../../assets/images/icons/UserIcon";
 import "./InputName.css";
 
 const InputName = () => {

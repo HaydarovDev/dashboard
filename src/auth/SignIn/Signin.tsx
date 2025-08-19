@@ -5,8 +5,8 @@ import Title from "../components/Title/Title";
 import Button from "../components/Button/Button";
 import InputPassword from "../components/InputPassword/InputPassword";
 import InputEmail from "../components/InputEmail/InputEmail";
-import GoogleIcon from "../../assets/images/icons/google";
-import AppleIcon from "../../assets/images/icons/apple";
+import GoogleIcon from "../../assets/images/icons/GoogleIcon";
+import AppleIcon from "../../assets/images/icons/AppleIcon";
 
 const Signin = () => {
   return (

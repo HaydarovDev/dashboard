@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "../InputPassword/InputPassword.css";
-import EmailIcon from "../../../assets/images/icons/email";
+import EmailIcon from "../../../assets/images/icons/EmailIcon";
 
 const InputEmail = () => {
   const [email, setEmail] = useState<string>("");

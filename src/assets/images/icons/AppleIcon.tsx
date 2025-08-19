@@ -1,4 +1,4 @@
-import type { SizeParam } from "./Lock";
+import type { SizeParam } from "./LockIcon";
 
 const AppleIcon = ({ size }: SizeParam) => {
   return (
