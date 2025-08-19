@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer>
       <Link to={"/privacy"}>Privacy Policy</Link>
-      <p>Copyright 2025 © haydarov_dev</p>
+      <p>© Copyright 2025</p>
     </footer>
   );
 };
