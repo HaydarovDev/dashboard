@@ -8,6 +8,9 @@ import Verify from "./auth/Verify/Verify";
 import Forget from "./auth/Forget/Forget";
 import Reset from "./auth/ResetPassword/Reset";
 import Auth from "./layout/Auth";
+import DashboardLayout from "./layout/DashboardLayout";
+import Dashboard from "./pages/Dashboard";
+import Market from "./pages/Market";
 
 const App = () => {
   return (
@@ -24,6 +27,11 @@ const App = () => {
             <Route path="forget-password" element={<Forget />} />
             <Route path="verify" element={<Verify />} />
             <Route path="reset-password" element={<Reset />} />
+          </Route>
+
+          <Route path="/" element={<DashboardLayout />}>
+            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="market" element={<Market />} />
           </Route>
         </Routes>
       </Suspense>
