@@ -8,6 +8,7 @@ const Header = () => {
       <a href="/" aria-label="company logo">
         <Logo color={dark ? "white" : "black"} />
       </a>
+      
     </header>
   );
 };
