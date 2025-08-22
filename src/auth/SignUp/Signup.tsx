@@ -29,7 +29,7 @@ const Signup = () => {
               <InputPassword id="create-password" placeholderText="Password" />
               <Button title="Sign Up" aria="signup" />
               <p>
-                Already Have An Account?{" "}
+                Already Have An Account?
                 <Link to={"/auth/signin"}>Sign In</Link>
               </p>
             </form>

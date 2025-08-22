@@ -3,7 +3,7 @@ import Sidebar from "../auth/components/Sidebar/Sidebar";
 
 const DashboardLayout = () => {
   return (
-    <main style={{ display: "flex" }}>
+    <main style={{ display: "flex", width: "100%" }}>
       <Sidebar />
       <Outlet />
     </main>

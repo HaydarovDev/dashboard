@@ -8,44 +8,67 @@ import WalletIcon from "../../../assets/images/icons/WalletIcon";
 import ActivityIcon from "../../../assets/images/icons/ActivityIcon";
 import HelpIcon from "../../../assets/images/icons/HelpIcon";
 import SettingsIcon from "../../../assets/images/icons/SettingsIcon";
+import useTheme from "../../../Context/UseTheme";
 
 const Sidebar = () => {
+  const { dark } = useTheme();
+
   return (
-    <aside>
+    <aside className={dark ? "active" : ""}>
       <header>
-        <Link to={"/"}>
-          <Logo />
+        <Link to={"/"} className={dark ? "active" : "white"}>
+          <Logo color={dark ? "white" : "black"} />
           DiveSea
         </Link>
         <ul>
           <li>
             <NavLink to={"/"}>
-              <DashboardIcon />
-              Dashboard
+              {({ isActive }) => (
+                <>
+                  <DashboardIcon color={isActive ? "black" : "black"} />
+                  Dashboard
+                </>
+              )}
             </NavLink>
           </li>
           <li>
             <NavLink to={"market"}>
-              <MarketIcon />
-              Market
+              {({ isActive }) => (
+                <>
+                  <MarketIcon color={isActive ? "white" : "black"} />
+                  Market
+                </>
+              )}
             </NavLink>
           </li>
           <li>
             <NavLink to={"message"}>
-              <MessageIcon />
-              Messages
+              {({ isActive }) => (
+                <>
+                  <MessageIcon color={isActive ? "white" : "black"} />
+                  Messages
+                </>
+              )}
             </NavLink>
           </li>
           <li>
-            <NavLink to={"mywallets"}>
-              <WalletIcon />
-              My Wallets
+            <NavLink to={"wallet"}>
+              {({ isActive }) => (
+                <>
+                  <WalletIcon color={isActive ? "white" : "black"} />
+                  My Wallets
+                </>
+              )}
             </NavLink>
           </li>
           <li>
             <NavLink to={"activity"}>
-              <ActivityIcon />
-              Activity
+              {({ isActive }) => (
+                <>
+                  <ActivityIcon color={isActive ? "white" : "black"} />
+                  Activity
+                </>
+              )}
             </NavLink>
           </li>
         </ul>
@@ -54,14 +77,22 @@ const Sidebar = () => {
         <ul>
           <li>
             <NavLink to={"help"}>
-              <HelpIcon />
-              Get Help
+              {({ isActive }) => (
+                <>
+                  <HelpIcon color={isActive ? "white" : "black"} />
+                  Get Help
+                </>
+              )}
             </NavLink>
           </li>
           <li>
             <NavLink to={"settings"}>
-              <SettingsIcon />
-              Settings
+              {({ isActive }) => (
+                <>
+                  <SettingsIcon color={isActive ? "white" : "black"} />
+                  Settings
+                </>
+              )}
             </NavLink>
           </li>
         </ul>

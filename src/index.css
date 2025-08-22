@@ -22,3 +22,15 @@ body {
   box-sizing: border-box;
   font-family: "PoppinsRegular";
 }
+
+body.light {
+  background-color: white;
+  color: black;
+  transition-duration: 200ms;
+}
+
+body.dark {
+  background-color: #121212;
+  color: white;
+  transition-duration: 200ms;
+}
