@@ -1,80 +1,78 @@
 :root {
-    --bgbtn: #f5f5f5;
-    -blackclr: black;
-    --bgBtn: #141416;
+  --bgbtn: #f5f5f5;
+  -blackclr: black;
+  --bgBtn: #141416;
 }
 
 main {
-    /* padding: 15px 35px; */
-    min-height: 80vh;
-    display: grid;
+  min-height: 80vh;
+  display: grid;
 }
 
 main section {
-    width: 100%;
-    min-height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main section article {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 main section article .auth {
-    text-align: center;
-    width: 100%;
-    max-width: 400px;
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
 }
 
 main section article .auth form label span {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 main section article .auth form p {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2px;
-    margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  margin: 0;
 }
 
 main section article .auth form p a {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 main section article .auth > span {
-    color: var(--grayClr);
-    text-align: center;
-    display: block;
-    margin-block: 20px;
+  color: var(--grayClr);
+  text-align: center;
+  display: block;
+  margin-block: 20px;
 }
 
 main section article .auth-providers {
-    display: flex;
-    gap: 7px;
+  display: flex;
+  gap: 7px;
 }
 
 main section article .auth-providers button {
-    background: var(--bgbtn);
-    border: none;
-    width: 50%;
-    padding: 8px 5px;
-    border-radius: 8px;
-    margin: 0;
-    cursor: pointer;
+  background: var(--bgbtn);
+  border: none;
+  width: 50%;
+  padding: 8px 5px;
+  border-radius: 8px;
+  margin: 0;
+  cursor: pointer;
 }
 
 main section .auth a {
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    display: block;
-    /* padding-block: 10px; */
-    text-align: end;
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  display: block;
+  text-align: end;
 }

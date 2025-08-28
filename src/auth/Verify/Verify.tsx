@@ -1,7 +1,7 @@
-import "./Verify.css";
-import Title from "../components/Title/Title";
-import Button from "../components/Button/Button";
-import InputOtp from "../components/InputOtp/InputOtp";
+import Button from '../../components/Button/Button';
+import InputOtp from '../../components/InputOtp/InputOtp';
+import Title from '../../components/Title/Title';
+import './Verify.css';
 
 const Verify = () => {
   return (

@@ -1,15 +1,15 @@
 @font-face {
-  font-family: "PoppinsExtraLight";
+  font-family: 'PoppinsExtraLight';
   src: url(./assets/font/Poppins-ExtraLight.woff);
 }
 
 @font-face {
-  font-family: "PoppinsLight";
+  font-family: 'PoppinsLight';
   src: url(./assets/font/Poppins-Light.woff);
 }
 
 @font-face {
-  font-family: "PoppinsRegular";
+  font-family: 'PoppinsRegular';
   src: url(./assets/font/Poppins-Regular.woff);
 }
 
@@ -20,7 +20,7 @@ body {
 
 * {
   box-sizing: border-box;
-  font-family: "PoppinsRegular";
+  font-family: 'PoppinsRegular';
 }
 
 body.light {

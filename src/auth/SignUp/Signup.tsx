@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom";
-import AppleIcon from "../../assets/images/icons/AppleIcon";
-import GoogleIcon from "../../assets/images/icons/GoogleIcon";
-import Button from "../components/Button/Button";
-import InputEmail from "../components/InputEmail/InputEmail";
-import InputName from "../components/InputName/InputName";
-import InputPassword from "../components/InputPassword/InputPassword";
-import Title from "../components/Title/Title";
-import "./SignUp.css";
+import { Link } from 'react-router-dom';
+import AppleIcon from '../../assets/images/icons/AppleIcon';
+import GoogleIcon from '../../assets/images/icons/GoogleIcon';
+
+import './SignUp.css';
+import InputName from '../../components/InputName/InputName';
+import InputEmail from '../../components/InputEmail/InputEmail';
+import InputPassword from '../../components/InputPassword/InputPassword';
+import Button from '../../components/Button/Button';
+import Title from '../../components/Title/Title';
 const Signup = () => {
   return (
     <main>
@@ -30,7 +31,7 @@ const Signup = () => {
               <Button title="Sign Up" aria="signup" />
               <p>
                 Already Have An Account?
-                <Link to={"/auth/signin"}>Sign In</Link>
+                <Link to={'/auth/signin'}>Sign In</Link>
               </p>
             </form>
           </div>

@@ -1,7 +1,7 @@
-import Button from "../components/Button/Button";
-import InputPassword from "../components/InputPassword/InputPassword";
-import Title from "../components/Title/Title";
-import "./Reset.css";
+import Button from '../../components/Button/Button';
+import InputPassword from '../../components/InputPassword/InputPassword';
+import Title from '../../components/Title/Title';
+import './Reset.css';
 
 const Reset = () => {
   return (

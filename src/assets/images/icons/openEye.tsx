@@ -1,4 +1,4 @@
-import type { SizeParam } from "../../../types/icon.types";
+import type { SizeParam } from '../../../types/icon.types';
 
 const OpenEyeIcon = ({ size }: SizeParam) => {
   return (

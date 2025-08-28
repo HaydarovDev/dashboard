@@ -1,4 +1,4 @@
-import type { IconColor } from "../../../types/icon.types";
+import type { IconColor } from '../../../types/icon.types';
 
 const HelpIcon = ({ color }: IconColor) => {
   return (

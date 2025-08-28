@@ -1,12 +1,12 @@
-import { memo } from "react";
-import "./Signin.css";
-import { Link } from "react-router-dom";
-import Title from "../components/Title/Title";
-import Button from "../components/Button/Button";
-import InputPassword from "../components/InputPassword/InputPassword";
-import InputEmail from "../components/InputEmail/InputEmail";
-import GoogleIcon from "../../assets/images/icons/GoogleIcon";
-import AppleIcon from "../../assets/images/icons/AppleIcon";
+import { memo } from 'react';
+import './Signin.css';
+import { Link } from 'react-router-dom';
+import GoogleIcon from '../../assets/images/icons/GoogleIcon';
+import AppleIcon from '../../assets/images/icons/AppleIcon';
+import Title from '../../components/Title/Title';
+import InputEmail from '../../components/InputEmail/InputEmail';
+import InputPassword from '../../components/InputPassword/InputPassword';
+import Button from '../../components/Button/Button';
 
 const Signin = () => {
   return (
@@ -28,10 +28,10 @@ const Signin = () => {
               <form action="" onSubmit={(e) => e.preventDefault()}>
                 <InputEmail />
                 <InputPassword id="signin" placeholderText="Password" />
-                <Link to={"/auth/forget-password"}>Forget Password ?</Link>
+                <Link to={'/auth/forget-password'}>Forget Password ?</Link>
                 <Button title="Sign in" aria="signin" />
                 <p>
-                  Create A New Account? <Link to={"/auth/signup"}>Sign Up</Link>
+                  Create A New Account? <Link to={'/auth/signup'}>Sign Up</Link>
                 </p>
               </form>
             </div>

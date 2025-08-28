@@ -1,5 +1,5 @@
-import HeaderDashboard from "../../auth/components/HeaderDashboard/HeaderDashboard";
-import "./Dashboard.css";
+import HeaderDashboard from '../../components/HeaderDashboard/HeaderDashboard';
+import './Dashboard.css';
 const Dashboard = () => {
   return (
     <main className="dashboard">

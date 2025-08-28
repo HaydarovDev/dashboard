@@ -1,0 +1,21 @@
+header.dashboard-header {
+  width: 100%;
+}
+
+header.dashboard-header label {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+}
+
+header.dashboard-header label input {
+  width: 100%;
+}
+
+header.dashboard-header label input::placeholder {
+  color: #c2c3cb;
+}
+
+header.dashboard-header header button {
+  background: white;
+}

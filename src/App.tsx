@@ -1,19 +1,22 @@
-import { Route, Routes } from "react-router-dom";
-import { Suspense } from "react";
-import Signin from "./auth/SignIn/Signin";
-import Signup from "./auth/SignUp/Signup";
-import Loader from "./auth/components/Loader/Loader";
-import Verify from "./auth/Verify/Verify";
-import Forget from "./auth/Forget/Forget";
-import Reset from "./auth/ResetPassword/Reset";
-import Auth from "./layout/Auth";
-import DashboardLayout from "./layout/DashboardLayout";
-import Dashboard from "./pages/Dashboard/Dashboard";
-import Market from "./pages/Market/Market";
-import Wallet from "./pages/Wallet/Wallet";
-import Activity from "./pages/Activity/Activity";
-import Help from "./pages/Help/Help";
-import Settings from "./pages/Settings/Settings";
+import { Route, Routes } from 'react-router-dom';
+import { lazy, Suspense } from 'react';
+import DashboardLayout from './layout/DashboardLayout';
+import Auth from './layout/Auth';
+
+import Signin from './auth/SignIn/Signin';
+import Signup from './auth/SignUp/Signup';
+import Verify from './auth/Verify/Verify';
+import Forget from './auth/Forget/Forget';
+import Reset from './auth/ResetPassword/Reset';
+import Loader from './components/Loader/Loader';
+import NotFound from './pages/NotFound/NotFound';
+
+const Dashboard = lazy(() => import('./pages/Dashboard/Dashboard'));
+const Market = lazy(() => import('./pages/Market/Market'));
+const Wallet = lazy(() => import('./pages/Wallet/Wallet'));
+const Activity = lazy(() => import('./pages/Activity/Activity'));
+const Help = lazy(() => import('./pages/Help/Help'));
+const Settings = lazy(() => import('./pages/Settings/Settings'));
 
 const App = () => {
   return (
@@ -39,6 +42,8 @@ const App = () => {
             <Route path="help" element={<Help />} />
             <Route path="settings" element={<Settings />} />
           </Route>
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
     </>
