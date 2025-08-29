@@ -22,7 +22,7 @@ const Sidebar = () => {
         </Link>
         <ul>
           <li>
-            <NavLink to={'/'} className={dark ? '' : ''}>
+            <NavLink to={'/'} className={dark ? 'dark' : ''}>
               {({ isActive }) => (
                 <>
                   <DashboardIcon color={isActive ? 'black' : 'black'} />
@@ -32,7 +32,7 @@ const Sidebar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to={'market'}>
+            <NavLink to={'market'} className={dark ? 'dark' : ''}>
               {({ isActive }) => (
                 <>
                   <MarketIcon color={isActive ? 'black' : 'black'} />
@@ -42,7 +42,7 @@ const Sidebar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to={'message'}>
+            <NavLink to={'message'} className={dark ? 'dark' : ''}>
               {({ isActive }) => (
                 <>
                   <MessageIcon color={isActive ? 'black' : 'black'} />
@@ -52,7 +52,7 @@ const Sidebar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to={'wallet'}>
+            <NavLink to={'wallet'} className={dark ? 'dark' : ''}>
               {({ isActive }) => (
                 <>
                   <WalletIcon color={isActive ? 'black' : 'black'} />
@@ -62,7 +62,7 @@ const Sidebar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to={'activity'}>
+            <NavLink to={'activity'} className={dark ? 'dark' : ''}>
               {({ isActive }) => (
                 <>
                   <ActivityIcon color={isActive ? 'black' : 'black'} />
@@ -76,7 +76,7 @@ const Sidebar = () => {
       <footer>
         <ul>
           <li>
-            <NavLink to={'help'}>
+            <NavLink to={'help'} className={dark ? 'dark' : ''}>
               {({ isActive }) => (
                 <>
                   <HelpIcon color={isActive ? 'black' : 'black'} />
@@ -86,7 +86,7 @@ const Sidebar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to={'settings'}>
+            <NavLink to={'settings'} className={dark ? 'dark' : ''}>
               {({ isActive }) => (
                 <>
                   <SettingsIcon color={isActive ? 'black' : 'black'} />

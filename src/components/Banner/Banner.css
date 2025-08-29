@@ -5,8 +5,9 @@
   align-items: center;
   background: black;
   border-radius: 25px;
-  margin: 10px;
   padding: 15px;
+  margin-top: 20px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.15);
 }
 
 .banner .text {

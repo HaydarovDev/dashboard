@@ -56,6 +56,8 @@ aside header ul li a {
   font-family: "PoppinsLight";
   gap: 10px;
   color: black;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition-duration: 150ms;
 }
 
 aside header ul li a:hover {
@@ -64,6 +66,14 @@ aside header ul li a:hover {
 
 aside header ul li a.active {
   background-color: #d5d5d5;
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+}
+
+aside header ul li a.dark {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+  color: white;
 }
 
 aside footer {
@@ -92,12 +102,24 @@ aside footer ul li a {
   color: black;
   font-family: "PoppinsLight";
   gap: 10px;
+  transition-duration: 150ms;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
 }
 
 aside footer ul li a:hover {
   background: #0000000d;
 }
 
+aside footer ul li a.dark {
+  color: white;
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+}
+
 aside footer ul li a.active {
   background-color: #d5d5d5;
+  box-shadow:
+    0 2px 6px rgba(0, 0, 0, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
 }

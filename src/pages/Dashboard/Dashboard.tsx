@@ -1,10 +1,10 @@
-
+import Banner from '../../components/Banner/Banner';
 import './Dashboard.css';
 const Dashboard = () => {
   return (
-    <main className="dashboard">
-      
-    </main>
+    <div>
+      <Banner />
+    </div>
   );
 };
 
