@@ -22,7 +22,7 @@ const Sidebar = () => {
         </Link>
         <ul>
           <li>
-            <NavLink to={'/'}>
+            <NavLink to={'/'} className={dark ? '' : ''}>
               {({ isActive }) => (
                 <>
                   <DashboardIcon color={isActive ? 'black' : 'black'} />
@@ -35,7 +35,7 @@ const Sidebar = () => {
             <NavLink to={'market'}>
               {({ isActive }) => (
                 <>
-                  <MarketIcon color={isActive ? 'white' : 'black'} />
+                  <MarketIcon color={isActive ? 'black' : 'black'} />
                   Market
                 </>
               )}
@@ -45,7 +45,7 @@ const Sidebar = () => {
             <NavLink to={'message'}>
               {({ isActive }) => (
                 <>
-                  <MessageIcon color={isActive ? 'white' : 'black'} />
+                  <MessageIcon color={isActive ? 'black' : 'black'} />
                   Messages
                 </>
               )}
@@ -55,7 +55,7 @@ const Sidebar = () => {
             <NavLink to={'wallet'}>
               {({ isActive }) => (
                 <>
-                  <WalletIcon color={isActive ? 'white' : 'black'} />
+                  <WalletIcon color={isActive ? 'black' : 'black'} />
                   My Wallets
                 </>
               )}
@@ -65,7 +65,7 @@ const Sidebar = () => {
             <NavLink to={'activity'}>
               {({ isActive }) => (
                 <>
-                  <ActivityIcon color={isActive ? 'white' : 'black'} />
+                  <ActivityIcon color={isActive ? 'black' : 'black'} />
                   Activity
                 </>
               )}
@@ -79,7 +79,7 @@ const Sidebar = () => {
             <NavLink to={'help'}>
               {({ isActive }) => (
                 <>
-                  <HelpIcon color={isActive ? 'white' : 'black'} />
+                  <HelpIcon color={isActive ? 'black' : 'black'} />
                   Get Help
                 </>
               )}
@@ -89,7 +89,7 @@ const Sidebar = () => {
             <NavLink to={'settings'}>
               {({ isActive }) => (
                 <>
-                  <SettingsIcon color={isActive ? 'white' : 'black'} />
+                  <SettingsIcon color={isActive ? 'black' : 'black'} />
                   Settings
                 </>
               )}

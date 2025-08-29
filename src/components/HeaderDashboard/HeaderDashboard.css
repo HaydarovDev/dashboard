@@ -1,11 +1,16 @@
 header.dashboard-header {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header.dashboard-header label {
   display: flex;
   align-items: center;
   border-radius: 20px;
+  margin: 0;
+  width: 600px;
 }
 
 header.dashboard-header label input {
@@ -14,8 +19,4 @@ header.dashboard-header label input {
 
 header.dashboard-header label input::placeholder {
   color: #c2c3cb;
-}
-
-header.dashboard-header header button {
-  background: white;
 }
