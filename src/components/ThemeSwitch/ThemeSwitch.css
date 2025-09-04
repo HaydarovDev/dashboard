@@ -1,10 +1,14 @@
 header.dashboard-header button {
   background: black;
-  width: 65.2px;
+  width: 55px;
   aspect-ratio: 1/1;
   padding: 0;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+header.dashboard-header button.dark {
+  background-color: #121212;
 }

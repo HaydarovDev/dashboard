@@ -7,27 +7,28 @@ aside {
   min-height: 100vh;
   width: 100%;
   max-width: 270px;
-  padding: 10px;
-  background: #eaeaea;
+  background: #f5f5f5;
   display: grid;
   align-content: space-between;
   transition-duration: 200ms;
+  padding: 10px;
+  border-right: 0.5px solid #121212;
 }
 
 aside.active {
-  background-color: black;
+  background: #1f1f1f;
 }
 
 aside header > a {
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: black;
-  border-bottom: 2px solid #e2e8f0;
-  padding: 15px 10px;
+  color: #111111;
+  padding: 10px 10px;
   font-weight: 600;
   font-size: 1.4rem;
   gap: 5px;
+  border-bottom: 0.5px solid #121212;
 }
 
 aside header > a.active {
@@ -36,8 +37,8 @@ aside header > a.active {
 
 aside header ul {
   margin: 30px 0;
-  padding: 0;
   display: grid;
+  padding: 0 10px;
 }
 
 aside header ul li {
@@ -52,28 +53,39 @@ aside header ul li a {
   width: 100%;
   text-decoration: none;
   padding: 15px;
-  border-radius: 15px;
+  border-radius: 12px;
   font-family: "PoppinsLight";
   gap: 10px;
   color: black;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
-  transition-duration: 150ms;
+  transition: all 100ms ease;
 }
 
 aside header ul li a:hover {
-  background: #0000000d;
+  background: #f5f5f5;
+}
+
+aside.active header ul li a:hover {
+  background-color: #2d2d2d;
 }
 
 aside header ul li a.active {
-  background-color: #d5d5d5;
-  box-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.35),
-    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+  background-color: black;
+  color: #ffffff;
+}
+
+aside.active header ul li a.active {
+  background-color: #444444;
+  color: #ffffff;
 }
 
 aside header ul li a.dark {
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
-  color: white;
+  /* background: #000000; */
+  color: #ffffff;
+}
+
+aside header ul li a.white {
+  background: white;
+  color: #ffffff;
 }
 
 aside footer {
@@ -82,7 +94,7 @@ aside footer {
 
 aside footer ul {
   margin: 30px 0;
-  padding: 0;
+  padding: 0 10px;
   display: grid;
 }
 
@@ -98,28 +110,26 @@ aside footer ul li a {
   width: 100%;
   text-decoration: none;
   padding: 15px;
-  border-radius: 15px;
-  color: black;
+  border-radius: 12px;
+  color: #111111;
   font-family: "PoppinsLight";
   gap: 10px;
-  transition-duration: 150ms;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+  transition: all 150ms ease;
 }
 
 aside footer ul li a:hover {
-  background: #0000000d;
+  background: #f5f5f5;
+}
+
+aside.active footer ul li a:hover {
+  background: #2d2d2d;
 }
 
 aside footer ul li a.dark {
-  color: white;
-  box-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.35),
-    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+  color: #ffffff;
 }
 
 aside footer ul li a.active {
-  background-color: #d5d5d5;
-  box-shadow:
-    0 2px 6px rgba(0, 0, 0, 0.35),
-    0 0 0 1px rgba(255, 255, 255, 0.06) inset;
+  background-color: #444444;
+  color: #ffffff;
 }

@@ -3,6 +3,11 @@ header.dashboard-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 7px;
+}
+
+header.dashboard-header.dark {
+  background: #1f1f1f;
 }
 
 header.dashboard-header label {
@@ -10,7 +15,13 @@ header.dashboard-header label {
   align-items: center;
   border-radius: 20px;
   margin: 0;
+  padding: 10px;
   width: 600px;
+  border: 1px solid #121212;
+}
+
+header.dashboard-header label.dark {
+  background: #121212;
 }
 
 header.dashboard-header label input {

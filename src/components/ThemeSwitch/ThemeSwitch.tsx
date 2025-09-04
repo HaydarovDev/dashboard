@@ -5,7 +5,7 @@ import './ThemeSwitch.css';
 const ThemeSwitch = () => {
   const { dark, toggleTheme } = useTheme();
   return (
-    <button onClick={toggleTheme}>
+    <button onClick={toggleTheme} className={dark ? 'dark' : ''}>
       {dark ? (
         <MoonIcon color={dark ? 'white' : 'black'} />
       ) : (

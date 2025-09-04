@@ -10,7 +10,6 @@ const DashboardLayout = () => {
         style={{
           display: 'flex',
           width: '100%',
-          padding: '10px',
           flexDirection: 'column',
         }}
       >

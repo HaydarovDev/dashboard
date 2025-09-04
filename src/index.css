@@ -24,7 +24,7 @@ body {
 }
 
 body.light {
-  background-color: white;
+  background-color: #f5f5f5;
   color: #121212;
   transition-duration: 200ms;
 }
