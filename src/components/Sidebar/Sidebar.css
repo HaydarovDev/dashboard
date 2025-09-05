@@ -23,7 +23,7 @@ aside header > a {
   display: flex;
   align-items: center;
   color: #111111;
-  padding: 4px;
+  padding: 10px;
   font-weight: 600;
   font-size: 1.4rem;
   gap: 5px;
@@ -52,7 +52,7 @@ aside header ul li a {
   width: 100%;
   text-decoration: none;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 10px;
   font-family: "PoppinsLight";
   gap: 10px;
   color: black;
@@ -108,7 +108,7 @@ aside footer ul li a {
   width: 100%;
   text-decoration: none;
   padding: 10px;
-  border-radius: 12px;
+  border-radius: 10px;
   color: #111111;
   font-family: "PoppinsLight";
   gap: 10px;
@@ -128,6 +128,6 @@ aside footer ul li a.dark {
 }
 
 aside footer ul li a.active {
-  background-color: #444444;
+  background-color: #1f1f1f;
   color: #ffffff;
 }

@@ -2,9 +2,12 @@ import Banner from '../../components/Banner/Banner';
 import './Dashboard.css';
 const Dashboard = () => {
   return (
-    <div className="dashboard">
-      <Banner />
-    </div>
+    <article className="dashboard">
+      <div className="dashboard-main">
+        <Banner />
+      </div>
+      <div>{/* <Banner /> */}</div>
+    </article>
   );
 };
 

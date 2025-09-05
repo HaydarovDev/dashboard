@@ -3,15 +3,16 @@ header.dashboard-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 4px 5px;
+  padding: 10px;
   border-bottom: 0.5px solid #121212;
+  gap: 10px;
 }
 
 header.dashboard-header label {
   display: flex;
   align-items: center;
   border-radius: 10px;
-  /* height: 55px; */
+  height: 40px;
   margin: 0;
   padding: 5px;
   width: 600px;
@@ -42,4 +43,21 @@ header.dashboard-header .account-details {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+header.dashboard-header .account-details .notification {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #121212;
+}
+
+header.dashboard-header .account-details .notification.dark {
+  background-color: #1f1f1f;
 }

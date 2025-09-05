@@ -1,4 +1,8 @@
-button.account {
+.account {
+    position: relative;
+}
+
+.account button.account {
     height: 40px;
     /* color: #f1f1f1; */
     font-size: 15px;
@@ -12,12 +16,12 @@ button.account {
     border: 0.5px solid black;
 }
 
-button.account.active {
+.account button.account.active {
     background: #1f1f1f;
     color: white;
 }
 
-button.account span {
+.account button.account span {
     width: 30px;
     aspect-ratio: 1/1;
     display: block;
@@ -30,10 +34,31 @@ button.account span {
     text-transform: uppercase;
 }
 
-button.account svg {
+.account button.account svg {
     transition: 200ms;
 }
 
-button.account.rotate svg {
+.account button.account.rotate svg {
     transform: rotate(180deg);
+}
+
+.account .headersubmenu {
+    width: 150px;
+    position: absolute;
+    left: -20px;
+    display: grid;
+    background-color: white;
+}
+
+.account .headersubmenu.active {
+    animation: top 200ms linear;
+}
+
+@keyframes top {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }

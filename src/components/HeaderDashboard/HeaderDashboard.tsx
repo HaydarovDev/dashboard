@@ -1,3 +1,4 @@
+import NotificationIcon from '../../assets/images/icons/NotificationIcon';
 import SearchIcon from '../../assets/images/icons/SearchIcon';
 import useTheme from '../../Context/UseTheme';
 import Account from '../Account/Account';
@@ -18,6 +19,12 @@ const HeaderDashboard = () => {
         />
       </label>
       <div className="account-details">
+        <button
+          className={`notification ${dark ? 'dark' : ''}`}
+          aria-label="notification"
+        >
+          <NotificationIcon color={dark ? '#f1f1f1' : '#1f1f1f'} />
+        </button>
         <ThemeSwitch />
         <Account />
       </div>
