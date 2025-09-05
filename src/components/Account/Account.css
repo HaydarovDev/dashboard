@@ -1,0 +1,39 @@
+button.account {
+    height: 40px;
+    /* color: #f1f1f1; */
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 15px;
+    border: 0.5px solid black;
+}
+
+button.account.active {
+    background: #1f1f1f;
+    color: white;
+}
+
+button.account span {
+    width: 30px;
+    aspect-ratio: 1/1;
+    display: block;
+    background: #1f1f1f;
+    display: grid;
+    color: #f1f1f1;
+    font-size: 18px;
+    place-items: center;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+button.account svg {
+    transition: 200ms;
+}
+
+button.account.rotate svg {
+    transform: rotate(180deg);
+}

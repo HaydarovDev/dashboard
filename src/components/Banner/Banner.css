@@ -3,11 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: #1f1f1f; */
+  background: #1f1f1f;
   border-radius: 25px;
-  padding: 15px;
-  /* box-shadow: 0 0 15px #121212; */
-  box-shadow: 0 0 7px lightgray;
+  padding: 20px;
 }
 
 .banner .text {
@@ -25,6 +23,14 @@
   padding: 15px 10px;
   transition-duration: 100ms;
   margin: 0;
+  background-color: var(--bgBtn);
+  color: #f3f5f6;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  margin-block: 20px;
+  border: 2px solid white;
 }
 
 .banner .buttons button:hover {
@@ -36,12 +42,9 @@
 .banner h1 {
   font-size: 2rem;
   margin-top: 0;
+  color: white;
 }
 
 .banner p {
-  color: black;
-}
-
-.banner p.dark {
   color: #d4d4d4;
 }

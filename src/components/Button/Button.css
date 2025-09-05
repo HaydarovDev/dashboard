@@ -1,4 +1,4 @@
-button {
+button.button {
   background-color: var(--bgBtn);
   color: #f3f5f6;
   width: 100%;

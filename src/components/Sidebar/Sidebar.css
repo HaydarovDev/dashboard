@@ -11,7 +11,6 @@ aside {
   display: grid;
   align-content: space-between;
   transition-duration: 200ms;
-  padding: 10px;
   border-right: 0.5px solid #121212;
 }
 
@@ -24,7 +23,7 @@ aside header > a {
   display: flex;
   align-items: center;
   color: #111111;
-  padding: 10px 10px;
+  padding: 4px;
   font-weight: 600;
   font-size: 1.4rem;
   gap: 5px;
@@ -52,7 +51,7 @@ aside header ul li a {
   align-items: center;
   width: 100%;
   text-decoration: none;
-  padding: 15px;
+  padding: 10px;
   border-radius: 12px;
   font-family: "PoppinsLight";
   gap: 10px;
@@ -69,7 +68,7 @@ aside.active header ul li a:hover {
 }
 
 aside header ul li a.active {
-  background-color: black;
+  background-color: #1f1f1f;
   color: #ffffff;
 }
 
@@ -79,7 +78,6 @@ aside.active header ul li a.active {
 }
 
 aside header ul li a.dark {
-  /* background: #000000; */
   color: #ffffff;
 }
 
@@ -109,7 +107,7 @@ aside footer ul li a {
   align-items: center;
   width: 100%;
   text-decoration: none;
-  padding: 15px;
+  padding: 10px;
   border-radius: 12px;
   color: #111111;
   font-family: "PoppinsLight";

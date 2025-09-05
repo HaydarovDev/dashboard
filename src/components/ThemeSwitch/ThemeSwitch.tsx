@@ -5,11 +5,15 @@ import './ThemeSwitch.css';
 const ThemeSwitch = () => {
   const { dark, toggleTheme } = useTheme();
   return (
-    <button onClick={toggleTheme} className={dark ? 'dark' : ''}>
+    <button
+      onClick={toggleTheme}
+      className={`switch ${dark ? 'dark' : ''}`}
+      aria-label="theme-switch"
+    >
       {dark ? (
         <MoonIcon color={dark ? 'white' : 'black'} />
       ) : (
-        <SunIcon color={dark ? 'black' : 'white'} />
+        <SunIcon color={dark ? 'white' : 'black'} />
       )}
     </button>
   );
