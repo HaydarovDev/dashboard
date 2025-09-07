@@ -1,6 +1,6 @@
-import type { IconColor } from '../../../types/icon.types';
+import type { IconParam } from '../../../types/icon.types';
 
-const NotificationIcon = ({ color }: IconColor) => {
+const NotificationIcon = ({ color }: IconParam) => {
   return (
     <svg
       width="20"

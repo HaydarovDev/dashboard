@@ -1,6 +1,6 @@
-import type { IconColor } from '../../../types/icon.types';
+import type { IconParam } from '../../../types/icon.types';
 
-const ActivityIcon = ({ color }: IconColor) => {
+const ActivityIcon = ({ color }: IconParam) => {
   return (
     <div>
       <svg

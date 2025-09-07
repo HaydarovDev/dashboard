@@ -1,6 +1,6 @@
-import type { IconColor } from '../../../types/icon.types';
+import type { IconParam } from '../../../types/icon.types';
 
-const DashboardIcon = ({ color = '#FEFEFE' }: IconColor) => {
+const DashboardIcon = ({ color = '#FEFEFE' }: IconParam) => {
   return (
     <svg
       width="20"

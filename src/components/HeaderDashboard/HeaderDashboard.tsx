@@ -10,7 +10,7 @@ const HeaderDashboard = () => {
   return (
     <header className={`dashboard-header ${dark ? 'dark' : ''}`}>
       <label htmlFor="searchId" className={`${dark ? 'dark' : ''}`}>
-        <SearchIcon />
+        <SearchIcon color={dark ? '#f5f5f5' : 'black'} />
         <input
           type="text"
           placeholder="Search"

@@ -15,8 +15,8 @@ const Banner = () => {
       </div>
       <img
         src={bannerImg}
-        width={200}
-        height={200}
+        width={180}
+        height={180}
         alt="not found"
         loading="lazy"
       />

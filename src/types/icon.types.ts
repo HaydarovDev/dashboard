@@ -1,5 +1,4 @@
-export type SizeParam = { size: number };
-
-export type IconColor = {
-  color: string;
+export type IconParam = {
+  size?: number;
+  color?: string;
 };

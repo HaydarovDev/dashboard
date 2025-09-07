@@ -1,6 +1,6 @@
 import type { IconParam } from '../../../types/icon.types';
 
-const SunIcon = ({ color }: IconParam) => {
+const LogoutIcon = ({ color }: IconParam) => {
   return (
     <svg
       width="20"
@@ -10,14 +10,21 @@ const SunIcon = ({ color }: IconParam) => {
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
-        d="M12 18.5C15.5899 18.5 18.5 15.5899 18.5 12C18.5 8.41015 15.5899 5.5 12 5.5C8.41015 5.5 5.5 8.41015 5.5 12C5.5 15.5899 8.41015 18.5 12 18.5Z"
+        d="M8.90002 7.55999C9.21002 3.95999 11.06 2.48999 15.11 2.48999H15.24C19.71 2.48999 21.5 4.27999 21.5 8.74999V15.27C21.5 19.74 19.71 21.53 15.24 21.53H15.11C11.09 21.53 9.24002 20.08 8.91002 16.54"
         stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M19.14 19.14L19.01 19.01M19.01 4.99L19.14 4.86L19.01 4.99ZM4.86 19.14L4.99 19.01L4.86 19.14ZM12 2.08V2V2.08ZM12 22V21.92V22ZM2.08 12H2H2.08ZM22 12H21.92H22ZM4.99 4.99L4.86 4.86L4.99 4.99Z"
+        d="M15 12H3.62"
+        stroke={color}
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M5.85 8.65002L2.5 12L5.85 15.35"
         stroke={color}
         strokeWidth="1.5"
         strokeLinecap="round"
@@ -27,4 +34,4 @@ const SunIcon = ({ color }: IconParam) => {
   );
 };
 
-export default SunIcon;
+export default LogoutIcon;

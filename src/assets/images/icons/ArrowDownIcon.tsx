@@ -1,6 +1,6 @@
-import type { IconColor } from '../../../types/icon.types';
+import type { IconParam } from '../../../types/icon.types';
 
-const ArrowDownIcon = ({ color }: IconColor) => {
+const ArrowDownIcon = ({ color }: IconParam) => {
   return (
     <svg
       width="18"

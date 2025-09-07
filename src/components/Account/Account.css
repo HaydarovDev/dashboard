@@ -43,11 +43,32 @@
 }
 
 .account .headersubmenu {
-    width: 150px;
+    min-width: 170px;
     position: absolute;
-    left: -20px;
+    right: 0;
+    top: 50px;
     display: grid;
-    background-color: white;
+    gap: 15px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding: 8px;
+}
+
+.account .headersubmenu.dark {
+    background-color: #1f1f1f;
+}
+
+.account .headersubmenu a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.account .headersubmenu a.dark {
+    color: #f5f5f5;
 }
 
 .account .headersubmenu.active {

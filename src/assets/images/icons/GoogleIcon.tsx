@@ -1,6 +1,6 @@
-import type { SizeParam } from '../../../types/icon.types';
+import type { IconParam } from '../../../types/icon.types';
 
-const GoogleIcon = ({ size }: SizeParam) => {
+const GoogleIcon = ({ size }: IconParam) => {
   return (
     <>
       <svg

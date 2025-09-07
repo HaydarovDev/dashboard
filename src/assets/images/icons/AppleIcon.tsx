@@ -1,6 +1,6 @@
-import type { SizeParam } from '../../../types/icon.types';
+import type { IconParam } from '../../../types/icon.types';
 
-const AppleIcon = ({ size }: SizeParam) => {
+const AppleIcon = ({ size }: IconParam) => {
   return (
     <>
       <svg

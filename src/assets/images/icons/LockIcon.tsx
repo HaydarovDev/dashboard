@@ -1,6 +1,6 @@
-import type { SizeParam } from '../../../types/icon.types';
+import type { IconParam } from '../../../types/icon.types';
 
-const LockIcon = ({ size }: SizeParam) => {
+const LockIcon = ({ size }: IconParam) => {
   return (
     <>
       <svg
