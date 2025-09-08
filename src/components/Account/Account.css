@@ -43,15 +43,16 @@
 }
 
 .account .headersubmenu {
-    min-width: 170px;
+    min-width: 180px;
     position: absolute;
     right: 0;
     top: 50px;
     display: grid;
-    gap: 15px;
+    /* gap: 15px; */
     background-color: #f5f5f5;
     border-radius: 10px;
     padding: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .account .headersubmenu.dark {
@@ -65,6 +66,23 @@
     align-items: center;
     gap: 10px;
     cursor: pointer;
+    padding: 10px 0;
+}
+
+.account .headersubmenu a:nth-child(2) {
+    border-bottom: 0.5px solid #e5e7eb;
+}
+
+.account .headersubmenu a.dark:nth-child(2) {
+    border-bottom: 0.5px solid #555759;
+}
+
+.account .headersubmenu a:nth-child(4) {
+    border-bottom: 0.5px solid #e5e7eb;
+}
+
+.account .headersubmenu a.dark:nth-child(4) {
+    border-bottom: 0.5px solid #555759;
 }
 
 .account .headersubmenu a.dark {

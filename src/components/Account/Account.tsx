@@ -5,8 +5,9 @@ import useTheme from '../../Context/UseTheme';
 import { NavLink } from 'react-router-dom';
 import UserIcon from '../../assets/images/icons/UserIcon';
 import DashboardIcon from '../../assets/images/icons/DashboardIcon';
-import DocsIcon from '../../assets/images/icons/DocsIcon';
-import LogoutIcon from '../../assets/images/icons/LogoutIcon';
+// import DocsIcon from '../../assets/images/icons/DocsIcon';
+// import LogoutIcon from '../../assets/images/icons/LogoutIcon';
+// import SettingsIcon from '../../assets/images/icons/SettingsIcon';
 
 const Account = () => {
   const [active, setActive] = useState<boolean>(false);
@@ -33,8 +34,10 @@ const Account = () => {
           className={`headersubmenu ${active ? 'active' : ''} ${dark ? 'dark' : ''}`}
         >
           <NavLink to="" className={dark ? 'dark' : ''}>
-            <DocsIcon size={18} color={dark ? 'white' : 'black'} />
-            View my page
+            Profile settings
+          </NavLink>
+          <NavLink to="" className={dark ? 'dark' : ''}>
+            View profile
           </NavLink>
           <NavLink to="" className={dark ? 'dark' : ''}>
             <DashboardIcon color={dark ? 'white' : 'black'} />
@@ -45,7 +48,6 @@ const Account = () => {
             My account
           </NavLink>
           <NavLink to="" className={dark ? 'dark' : ''}>
-            <LogoutIcon color={dark ? 'white' : 'black'} />
             Logout
           </NavLink>
         </div>
