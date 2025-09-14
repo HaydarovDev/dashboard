@@ -60,7 +60,7 @@ main section article .auth-providers {
 }
 
 main section article .auth-providers button {
-  background: var(--bgbtn);
+  /* background: var(--bgbtn); */
   border: none;
   width: 50%;
   padding: 8px 5px;
@@ -69,10 +69,18 @@ main section article .auth-providers button {
   cursor: pointer;
 }
 
+main section article .auth-providers button.dark {
+  background-color: #1f1f1f;
+}
+
 main section .auth a {
   text-decoration: none;
   color: black;
   font-size: 15px;
   display: block;
   text-align: end;
+}
+
+main section .auth a.dark {
+  color: #f5f5f5;
 }

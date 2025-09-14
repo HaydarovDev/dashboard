@@ -7,8 +7,11 @@ import Title from '../../components/Title/Title';
 import InputEmail from '../../components/InputEmail/InputEmail';
 import InputPassword from '../../components/InputPassword/InputPassword';
 import Button from '../../components/Button/Button';
+import useTheme from '../../Context/UseTheme';
 
 const Signin = () => {
+  const { dark } = useTheme();
+
   return (
     <>
       <main>
@@ -17,11 +20,17 @@ const Signin = () => {
             <div className="auth">
               <Title title="Sign In To DiveSea" />
               <div className="auth-providers">
-                <button aria-label="google">
-                  <GoogleIcon size={25} />
+                <button
+                  aria-label="sign in google"
+                  className={dark ? 'dark' : ''}
+                >
+                  <GoogleIcon size={25} color={dark ? '#f5f5f5' : 'black'} />
                 </button>
-                <button aria-label="apple">
-                  <AppleIcon size={25} />
+                <button
+                  aria-label="sign in apple"
+                  className={dark ? 'dark' : ''}
+                >
+                  <AppleIcon size={25} color={dark ? '#f5f5f5' : 'black'} />
                 </button>
               </div>
               <span>OR</span>
@@ -31,7 +40,10 @@ const Signin = () => {
                 <Link to={'/auth/forget-password'}>Forget Password ?</Link>
                 <Button title="Sign in" aria="signin" />
                 <p>
-                  Create A New Account? <Link to={'/auth/signup'}>Sign Up</Link>
+                  Create A New Account?{' '}
+                  <Link to={'/auth/signup'} className={dark ? 'dark' : ''}>
+                    Sign Up
+                  </Link>
                 </p>
               </form>
             </div>

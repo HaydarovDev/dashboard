@@ -1,3 +1,8 @@
-h1 {
+h1.title {
   font-size: 1.7rem;
+  color: #121212;
+}
+
+h1.dark {
+  color: #f5f5f5;
 }

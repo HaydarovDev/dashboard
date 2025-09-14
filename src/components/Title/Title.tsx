@@ -1,10 +1,8 @@
+import useTheme from '../../Context/UseTheme';
 import './Title.css';
 const Title = ({ title }: { title: string }) => {
-  return (
-    <>
-      <h1>{title}</h1>
-    </>
-  );
+  const { dark } = useTheme();
+  return <h1 className={`title ${dark ? 'dark' : ''}`}>{title}</h1>;
 };
 
 export default Title;

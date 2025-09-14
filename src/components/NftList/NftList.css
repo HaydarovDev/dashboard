@@ -1,0 +1,90 @@
+article header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+article header a {
+    text-decoration: none;
+    color: unset;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.table-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-wrapper::-webkit-scrollbar-track {
+    background: #1f1f1f;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb:hover {
+    background: #666;
+}
+
+.custom-table tr {
+    cursor: pointer;
+}
+
+.custom-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+article .custom-table th,
+article .custom-table td {
+    text-align: left;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+article.dark .custom-table th {
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+    font-weight: 600;
+    transition: 200ms;
+}
+
+article .custom-table th {
+    background-color: #f5f5f5;
+    color: #1f1f1f;
+}
+
+.collection {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.collection img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.author {
+    font-size: 14px;
+    color: #6b7280;
+    margin: 0;
+}
+
+.percent {
+    color: #22c55e;
+}
