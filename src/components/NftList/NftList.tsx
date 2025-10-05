@@ -29,6 +29,7 @@ const NftList = () => {
                 <div className="collection">
                   <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFBsXu_2-fEkO1O0VjkyACrjkySMbSlupyAA&s"
+                    loading="lazy"
                     alt="avatar"
                   />
                   <div>
@@ -49,6 +50,7 @@ const NftList = () => {
                 <div className="collection">
                   <img
                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFBsXu_2-fEkO1O0VjkyACrjkySMbSlupyAA&s"
+                    loading="lazy"
                     alt="avatar"
                   />
                   <div>
