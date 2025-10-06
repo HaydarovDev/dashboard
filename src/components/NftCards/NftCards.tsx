@@ -55,7 +55,7 @@ const NftCards = () => {
               <div className="img">
                 <img src={card?.img} alt="not found" />
               </div>
-              <h5>{card?.title}</h5>
+              <h4>{card?.title}</h4>
               <div className="card_text">
                 <div className="text">
                   <p>{card?.description}</p>

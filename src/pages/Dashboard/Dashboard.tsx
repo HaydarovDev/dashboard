@@ -1,4 +1,5 @@
 import Banner from '../../components/Banner/Banner';
+import BestSellers from '../../components/BestSellers/BestSellers';
 import NftCards from '../../components/NftCards/NftCards';
 import NftList from '../../components/NftList/NftList';
 import './Dashboard.css';
@@ -10,7 +11,9 @@ const Dashboard = () => {
         <NftList />
         <NftCards />
       </div>
-      <div></div>
+      <div className="usersList">
+        <BestSellers />
+      </div>
     </article>
   );
 };

@@ -1,10 +1,10 @@
 .account {
     position: relative;
+    z-index: 10;
 }
 
 .account button.account {
     height: 40px;
-    /* color: #f1f1f1; */
     font-size: 15px;
     cursor: pointer;
     border: none;

@@ -16,7 +16,6 @@ const Account = () => {
   const handleClick = () => {
     setActive((prev) => !prev);
   };
-  console.log(active);
 
   const userName: string = 'haydarov';
   return (

@@ -1,15 +1,17 @@
 .cardContainer {
     display: flex;
     justify-content: space-between;
+    gap: 15px;
 }
 
 article.cards .cards {
+    width: 22%;
     padding: 10px;
     border-radius: 15px;
-    animation-duration: 300ms;
     position: relative;
     overflow: hidden;
-    box-shadow: 22.08px 6.69px 33.45px 0px rgba(199, 199, 199, 0.6);
+    box-shadow: 0 0 33.45px 0px rgba(199, 199, 199, 0.6);
+    cursor: pointer;
 }
 
 article.cards .cards.active {
@@ -19,8 +21,8 @@ article.cards .cards.active {
 
 article.cards .cards .img {
     position: relative;
-    width: 144px;
-    height: 144px;
+    width: 100%;
+    height: 150px;
     border-radius: 15px;
     overflow: hidden;
 }
@@ -31,7 +33,7 @@ article.cards .cards .img img {
     border-radius: 15px;
 }
 
-article.cards .cards h5 {
+article.cards .cards h4 {
     margin: 8px 0;
     position: relative;
 }
@@ -69,7 +71,7 @@ article.cards .cards .card_text button {
     align-items: center;
 }
 
-article.cards .cards .card_text button:hover {
+/* article.cards .cards .card_text button:hover {
     background: transparent;
     color: #141416;
-}
+} */

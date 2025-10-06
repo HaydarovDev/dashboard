@@ -1,0 +1,64 @@
+.bestSellersList {
+    width: 100%;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.bestSellersList header button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+
+.bestSellersList.active {
+    background: #1f1f1f;
+}
+
+.users_content .user_id {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+
+.users_content .user_id .user_text {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: relative;
+}
+
+.users_content .user_id .user_text img {
+    border-radius: 50%;
+}
+
+.users_content .user_id .user_text p {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+}
+
+.users_content .user_id .user_text p span {
+    font-size: 13px;
+    color: #718096;
+    font-weight: 100;
+}
+
+.users_content .user_id button {
+    width: 90px;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 7px;
+    border: 2px solid #e6e8ec;
+    padding: 5px 10px;
+    background: transparent;
+}
+
+.users_content .user_id button.active {
+    color: white;
+}

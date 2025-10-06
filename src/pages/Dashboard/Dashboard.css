@@ -4,6 +4,11 @@
   padding: 10px;
   display: flex;
   overflow-y: auto;
+  gap: 20px;
+}
+
+.dashboard .usersList {
+  width: 35%;
 }
 
 .dashboard::-webkit-scrollbar {
@@ -17,4 +22,15 @@
 
 .dashboard .dashboard-main {
   width: 65%;
+}
+
+@media screen and (max-width: 991px) {
+  .dashboard {
+    width: 80%;
+    flex-direction: column;
+  }
+
+  .dashboard .dashboard-main {
+    width: 100%;
+  }
 }

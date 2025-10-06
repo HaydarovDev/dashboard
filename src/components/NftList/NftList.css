@@ -28,10 +28,6 @@ article header a {
     background: #666;
 }
 
-.custom-table tr {
-    cursor: pointer;
-}
-
 .custom-table {
     width: 100%;
     border-collapse: collapse;
@@ -45,6 +41,10 @@ article .custom-table td {
     border-bottom: 1px solid #e5e7eb;
     font-size: 14px;
     white-space: nowrap;
+}
+
+article .custom-table td {
+    cursor: pointer;
 }
 
 article.dark .custom-table th {
