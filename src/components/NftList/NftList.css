@@ -1,86 +1,86 @@
 article header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 article header a {
-    text-decoration: none;
-    color: unset;
-    font-size: 14px;
+  text-decoration: none;
+  color: unset;
+  font-size: 14px;
 }
 
 .table-wrapper {
-    width: 100%;
-    overflow-x: auto;
+  width: 100%;
+  overflow-x: auto;
 }
 
 .table-wrapper::-webkit-scrollbar {
-    height: 8px;
+  height: 8px;
 }
 
 .table-wrapper::-webkit-scrollbar-thumb {
-    background: #1f1f1f;
-    border-radius: 4px;
+  background: #1f1f1f;
+  border-radius: 4px;
 }
 
 .table-wrapper::-webkit-scrollbar-thumb:hover {
-    background: #666;
+  background: #666;
 }
 
 .custom-table {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 800px;
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
 }
 
 article .custom-table th,
 article .custom-table td {
-    text-align: left;
-    padding: 12px 16px;
-    border-bottom: 1px solid #e5e7eb;
-    font-size: 14px;
-    white-space: nowrap;
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 14px;
+  white-space: nowrap;
 }
 
 article .custom-table td {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 article.dark .custom-table th {
-    background-color: #1f1f1f;
-    color: #f5f5f5;
-    font-weight: 600;
+  background-color: #1f1f1f;
+  color: #f5f5f5;
+  font-weight: 600;
 }
 
 article .custom-table th {
-    background-color: #f5f5f5;
-    color: #1f1f1f;
+  background-color: #f5f5f5;
+  color: #1f1f1f;
 }
 
 .collection {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .collection img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .name {
-    font-weight: bold;
-    margin: 0;
+  font-weight: bold;
+  margin: 0;
 }
 
 .author {
-    font-size: 14px;
-    color: #6b7280;
-    margin: 0;
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
 }
 
 .percent {
-    color: #22c55e;
+  color: #22c55e;
 }

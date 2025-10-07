@@ -25,9 +25,6 @@ const BestSellers = () => {
                     {user.userName}
                     <span>{user.userMail}</span>
                   </p>
-                  <p>
-                    <b></b>
-                  </p>
                 </div>
                 <button className={`${dark ? 'active' : ''}`}>Follow</button>
               </div>

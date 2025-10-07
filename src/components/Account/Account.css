@@ -1,102 +1,102 @@
 .account {
-    position: relative;
-    z-index: 10;
+  position: relative;
+  z-index: 10;
 }
 
 .account button.account {
-    height: 40px;
-    font-size: 15px;
-    cursor: pointer;
-    border: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 15px;
-    border: 0.5px solid black;
+  height: 40px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 15px;
+  border: 0.5px solid black;
 }
 
 .account button.account.active {
-    background: #1f1f1f;
-    color: white;
+  background: #1f1f1f;
+  color: white;
 }
 
 .account button.account span {
-    width: 30px;
-    aspect-ratio: 1/1;
-    display: block;
-    background: #1f1f1f;
-    display: grid;
-    color: #f1f1f1;
-    font-size: 18px;
-    place-items: center;
-    border-radius: 50px;
-    text-transform: uppercase;
+  width: 30px;
+  aspect-ratio: 1/1;
+  display: block;
+  background: #1f1f1f;
+  display: grid;
+  color: #f1f1f1;
+  font-size: 18px;
+  place-items: center;
+  border-radius: 50px;
+  text-transform: uppercase;
 }
 
 .account button.account svg {
-    transition: 200ms;
+  transition: 200ms;
 }
 
 .account button.account.rotate svg {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .account .headersubmenu {
-    min-width: 180px;
-    position: absolute;
-    right: 0;
-    top: 50px;
-    display: grid;
-    background-color: #f5f5f5;
-    border-radius: 10px;
-    padding: 15px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+  position: absolute;
+  right: 0;
+  top: 50px;
+  display: grid;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .account .headersubmenu.dark {
-    background-color: #1f1f1f;
+  background-color: #1f1f1f;
 }
 
 .account .headersubmenu a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    cursor: pointer;
-    padding: 10px 0;
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px 0;
 }
 
 .account .headersubmenu a:nth-child(2) {
-    border-bottom: 0.5px solid #9ca3af;
+  border-bottom: 0.5px solid #9ca3af;
 }
 
 .account .headersubmenu a.dark:nth-child(2) {
-    border-bottom: 0.5px solid #555759;
+  border-bottom: 0.5px solid #555759;
 }
 
 .account .headersubmenu a:nth-child(4) {
-    border-bottom: 0.5px solid #9ca3af;
+  border-bottom: 0.5px solid #9ca3af;
 }
 
 .account .headersubmenu a.dark:nth-child(4) {
-    border-bottom: 0.5px solid #555759;
+  border-bottom: 0.5px solid #555759;
 }
 
 .account .headersubmenu a.dark {
-    color: #f5f5f5;
+  color: #f5f5f5;
 }
 
 .account .headersubmenu.active {
-    animation: top 200ms linear;
+  animation: top 200ms linear;
 }
 
 @keyframes top {
-    from {
-        transform: translateY(10px);
-    }
-    to {
-        transform: translateY(0);
-    }
+  from {
+    transform: translateY(10px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

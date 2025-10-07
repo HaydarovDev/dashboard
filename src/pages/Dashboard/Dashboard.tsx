@@ -2,6 +2,7 @@ import Banner from '../../components/Banner/Banner';
 import BestSellers from '../../components/BestSellers/BestSellers';
 import NftCards from '../../components/NftCards/NftCards';
 import NftList from '../../components/NftList/NftList';
+import RecentViewers from '../../components/RecentViewers/RecentViewers';
 import './Dashboard.css';
 const Dashboard = () => {
   return (
@@ -13,6 +14,7 @@ const Dashboard = () => {
       </div>
       <div className="usersList">
         <BestSellers />
+        <RecentViewers />
       </div>
     </article>
   );

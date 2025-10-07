@@ -2,6 +2,8 @@
     width: 100%;
     border-radius: 25px;
     padding: 10px;
+    background: white;
+    border: 1px solid #edf2f7;
 }
 
 .bestSellersList header button {
@@ -16,6 +18,7 @@
 
 .bestSellersList.active {
     background: #1f1f1f;
+    border: 1px solid transparent;
 }
 
 .users_content .user_id {

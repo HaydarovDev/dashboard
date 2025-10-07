@@ -26,11 +26,12 @@
 
 @media screen and (max-width: 991px) {
   .dashboard {
-    width: 80%;
     flex-direction: column;
   }
 
   .dashboard .dashboard-main {
     width: 100%;
   }
+
+  
 }

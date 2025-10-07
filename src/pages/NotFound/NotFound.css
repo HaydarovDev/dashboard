@@ -9,7 +9,7 @@ article.notFound {
 article .notFoundPage h1 {
   font-size: 7rem;
   margin: 0;
-  font-family: "PoppinsRegular";
+  font-family: 'PoppinsRegular';
 }
 
 article p {

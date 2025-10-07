@@ -1,0 +1,85 @@
+.recents {
+    width: 100%;
+    border-radius: 25px;
+    padding: 0 15px 5px 15px;
+    background: white;
+    margin-top: 20px;
+}
+
+.recents.active {
+    background: #1f1f1f;
+}
+
+.recents header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.recents header button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.recents header h3 {
+    font-weight: 600;
+}
+
+.recents .users_content .viewers_list .view_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.recents .users_content .viewers_list .view_list .view_img {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.recents .view_img .img_wrapper {
+    position: relative;
+}
+
+.recents .view_img .img_wrapper img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.recents .view_text p {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.recents .view_text span {
+    color: #64748b;
+    font-size: 12px;
+}
+
+.recents .text_list {
+    text-align: right;
+}
+
+.recents .text_list p {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.recents .text_list .benefit_bonus {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.recents .text_list .benefit_bonus.plus {
+    color: #22c55e;
+}
+
+.recents .text_list .benefit_bonus.minus {
+    color: #ef4444;
+}

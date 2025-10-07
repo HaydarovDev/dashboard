@@ -5,6 +5,38 @@ import nft4 from '../assets/images/avatar4.jpg';
 import nft5 from '../assets/images/avatar5.jpg';
 import nft6 from '../assets/images/avatar6.jpg';
 
+import Etherium from '../assets/images/icons/Etherium';
+
+export const viewer_list = [
+  {
+    id: 1,
+    img: nft1,
+    userName: 'Alex Ca.',
+    Name: 'Alexy',
+    list_icon: Etherium,
+    list_price: '8,456',
+    benefit: +23.11,
+  },
+  {
+    id: 2,
+    img: nft2,
+    userName: 'Juliya S.',
+    Name: 'JuliyaS',
+    list_icon: Etherium,
+    list_price: '5,327',
+    benefit: -32.01,
+  },
+  {
+    id: 3,
+    img: nft2,
+    userName: 'Juliya S.',
+    Name: 'JuliyaS',
+    list_icon: Etherium,
+    list_price: '5,327',
+    benefit: -32.01,
+  },
+];
+
 export const bestSellers = [
   {
     id: Math.random() * 100,
