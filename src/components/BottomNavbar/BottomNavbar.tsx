@@ -1,5 +1,7 @@
+import './BottomNavbar.css';
+
 const BottomNavbar = () => {
-  return <div>BottomNavbar</div>;
+  return <nav className="bottomNav">Hello bottom navbar</nav>;
 };
 
 export default BottomNavbar;

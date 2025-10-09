@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../components/Sidebar/Sidebar';
 import HeaderDashboard from '../components/HeaderDashboard/HeaderDashboard';
+import BottomNavbar from '../components/BottomNavbar/BottomNavbar';
 
 const DashboardLayout = () => {
   return (
@@ -15,6 +16,7 @@ const DashboardLayout = () => {
       >
         <HeaderDashboard />
         <Outlet />
+        <BottomNavbar />
       </div>
     </main>
   );

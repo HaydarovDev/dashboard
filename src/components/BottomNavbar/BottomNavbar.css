@@ -1,0 +1,11 @@
+nav.bottomNav {
+    display: none;
+    position: fixed;
+    bottom: 0;
+}
+
+@media screen and (max-width: 991px) {
+    nav.bottomNav {
+        display: block;
+    }
+}
