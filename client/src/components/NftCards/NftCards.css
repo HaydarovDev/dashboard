@@ -75,3 +75,9 @@ article.cards .cards .card_text button {
     background: transparent;
     color: #141416;
 } */
+
+@media screen and (max-width: 991px) {
+  .cardContainer {
+    flex-wrap: wrap;
+  }
+}

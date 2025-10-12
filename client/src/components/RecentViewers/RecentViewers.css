@@ -1,7 +1,7 @@
 .recents {
     width: 100%;
     border-radius: 25px;
-    padding: 0 15px 5px 15px;
+    padding: 10px;
     background: white;
     margin-top: 20px;
 }
@@ -82,4 +82,10 @@
 
 .recents .text_list .benefit_bonus.minus {
     color: #ef4444;
+}
+
+@media screen and (max-width: 991px) {
+    .recents {
+        margin: 0 !important;
+    }
 }
