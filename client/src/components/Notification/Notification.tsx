@@ -8,7 +8,7 @@ const Notification = () => {
   const { dark } = useTheme();
   const [active, setActive] = useState<boolean>(false);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [data, setData] = useState<NotificationData[]>([]);
+  const [data, _] = useState<NotificationData[]>([]);
 
   const handleClick = () => {
     setActive((prev) => !prev);

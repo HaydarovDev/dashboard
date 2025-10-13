@@ -38,7 +38,6 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  /* display: none; */
 }
 
 .account button.account svg {
@@ -105,5 +104,11 @@
   }
   to {
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .account button.account p {
+    display: none;
   }
 }
