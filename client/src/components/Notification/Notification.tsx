@@ -2,10 +2,13 @@ import { useState } from 'react';
 import NotificationIcon from '../../assets/images/icons/NotificationIcon';
 import useTheme from '../../Context/UseTheme';
 import './Notification.css';
+import type { NotificationData } from '../../service/service';
 
 const Notification = () => {
   const { dark } = useTheme();
   const [active, setActive] = useState<boolean>(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [data, setData] = useState<NotificationData[]>([]);
 
   const handleClick = () => {
     setActive((prev) => !prev);
@@ -22,11 +25,27 @@ const Notification = () => {
       </button>
 
       {active && (
-        <div
-          className={`notificationItems ${dark ? 'dark' : ''} ${active ? 'active' : ''}`}
-        >
-          Notification
-        </div>
+        <>
+          <div
+            className={`notificationItems ${dark ? 'dark' : ''} ${active ? 'active' : ''}`}
+          >
+            <h4>Notification</h4>
+            <div>
+              {data && data?.length === 0 ? (
+                <p style={{ fontSize: '15px' }}>No data found (</p>
+              ) : (
+                data?.map((message) => {
+                  return (
+                    <div key={message.id}>
+                      <h4>{message.title}</h4>
+                      <p>{message.message}</p>
+                    </div>
+                  );
+                })
+              )}
+            </div>
+          </div>
+        </>
       )}
     </div>
   );

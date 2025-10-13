@@ -1,3 +1,4 @@
+import type React from 'react';
 import nft1 from '../assets/images/avatar1.jpg';
 import nft2 from '../assets/images/avatar2.jpg';
 import nft3 from '../assets/images/avatar3.jpg';
@@ -75,3 +76,18 @@ export const bestSellers = [
     userMail: '@TrevorP',
   },
 ];
+
+export interface NotificationData {
+  id: number | string;
+  title: string;
+  message: string;
+}
+
+export interface NftDetails {
+  id: string | number;
+  img: string;
+  title: string;
+  description: string;
+  icon?: React.ReactNode;
+  price: number;
+}

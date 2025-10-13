@@ -3,11 +3,12 @@ import Etherium from '../../assets/images/icons/Etherium';
 import nft from '../../assets/images/nft.png';
 import './NftCards.css';
 import useTheme from '../../Context/UseTheme';
+import type { NftDetails } from '../../service/service';
 
 const NftCards = () => {
   const { dark } = useTheme();
 
-  const data = [
+  const data: NftDetails[] = [
     {
       id: 1,
       img: nft,

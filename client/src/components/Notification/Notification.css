@@ -18,6 +18,10 @@
     color: white;
 }
 
+.notificationItems h4 {
+    margin: 0;
+}
+
 .notificationItems.active {
     animation: top 200ms linear;
 }
