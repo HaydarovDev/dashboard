@@ -71,11 +71,6 @@ article.cards .cards .card_text button {
   align-items: center;
 }
 
-/* article.cards .cards .card_text button:hover {
-    background: transparent;
-    color: #141416;
-} */
-
 @media screen and (max-width: 991px) {
   .cardContainer {
     grid-template-columns: 2fr 2fr;

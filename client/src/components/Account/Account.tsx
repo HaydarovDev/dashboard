@@ -25,8 +25,10 @@ const Account = () => {
         onClick={handleClick}
       >
         <span>{userName.slice(0, 1)}</span>
-        {userName}
-        <ArrowDownIcon color={dark ? '#f1f1f1' : '#1f1f1f'} />
+        <p>
+          {userName}
+          <ArrowDownIcon color={dark ? '#f1f1f1' : '#1f1f1f'} />
+        </p>
       </button>
       {active && (
         <div

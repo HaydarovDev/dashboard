@@ -13,7 +13,7 @@
   align-items: center;
   gap: 8px;
   border-radius: 15px;
-  border: 0.5px solid black;
+  border: 0.5px solid #121212;
 }
 
 .account button.account.active {
@@ -32,6 +32,13 @@
   place-items: center;
   border-radius: 50px;
   text-transform: uppercase;
+}
+
+.account button.account p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  /* display: none; */
 }
 
 .account button.account svg {
