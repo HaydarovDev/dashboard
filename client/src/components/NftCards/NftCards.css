@@ -2,7 +2,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 15px;
+  gap: 20px;
 }
 
 article.cards .cardContainer .cards {
@@ -41,6 +41,7 @@ article.cards .cards h4 {
 article.cards .cards .card_text {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
 }
 
 article.cards .cards .card_text .text p {

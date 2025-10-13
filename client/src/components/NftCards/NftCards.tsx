@@ -1,47 +1,11 @@
 import { Link } from 'react-router-dom';
 import Etherium from '../../assets/images/icons/Etherium';
-import nft from '../../assets/images/nft.png';
 import './NftCards.css';
 import useTheme from '../../Context/UseTheme';
-import type { NftDetails } from '../../types/iconTypes';
+import { data } from '../../service/service';
 
 const NftCards = () => {
   const { dark } = useTheme();
-
-  const data: NftDetails[] = [
-    {
-      id: 1,
-      img: nft,
-      title: 'Sun-Glass',
-      description: 'Current bid',
-      icon: <Etherium size={13} color={dark ? 'white' : 'black'} />,
-      price: 1.75,
-    },
-    {
-      id: 2,
-      img: nft,
-      title: 'Sun-Glass',
-      description: 'Current bid',
-      icon: <Etherium size={13} color={dark ? 'white' : 'black'} />,
-      price: 1.75,
-    },
-    {
-      id: 3,
-      img: nft,
-      title: 'Sun-Glass',
-      description: 'Current bid',
-      icon: <Etherium size={13} color={dark ? 'white' : 'black'} />,
-      price: 1.75,
-    },
-    {
-      id: 4,
-      img: nft,
-      title: 'NuEvey',
-      description: 'Current bid',
-      icon: <Etherium size={13} color={dark ? 'white' : 'black'} />,
-      price: 1.25,
-    },
-  ];
 
   return (
     <article className="cards">
@@ -51,7 +15,7 @@ const NftCards = () => {
       </header>
       <div className="cardContainer">
         {data &&
-          data.map((card) => (
+          data.slice(0, 4).map((card) => (
             <div className={`cards ${dark ? 'active' : ''}`} key={card.id}>
               <div className="img">
                 <img src={card?.img} alt="not found" />
@@ -61,7 +25,7 @@ const NftCards = () => {
                 <div className="text">
                   <p>{card?.description}</p>
                   <span>
-                    {card?.icon}
+                    <Etherium size={13} color={dark ? 'white' : 'black'} />
                     {card?.price}
                   </span>
                 </div>
