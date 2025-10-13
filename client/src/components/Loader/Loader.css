@@ -1,12 +1,17 @@
 .loader {
     position: absolute;
+    left: 0;
     width: 100%;
     min-height: 100vh;
-    background: #1f1f1f;
     z-index: 11;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #f5f5f5;
+}
+
+.loader.dark {
+    background: #1f1f1f;
 }
 
 .lds-spinner,
