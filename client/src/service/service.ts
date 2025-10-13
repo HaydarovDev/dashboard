@@ -1,12 +1,10 @@
-import type React from 'react';
+import Etherium from '../assets/images/icons/Etherium';
 import nft1 from '../assets/images/avatar1.jpg';
 import nft2 from '../assets/images/avatar2.jpg';
 import nft3 from '../assets/images/avatar3.jpg';
 import nft4 from '../assets/images/avatar4.jpg';
 import nft5 from '../assets/images/avatar5.jpg';
 import nft6 from '../assets/images/avatar6.jpg';
-
-import Etherium from '../assets/images/icons/Etherium';
 
 export const viewer_list = [
   {
@@ -76,18 +74,3 @@ export const bestSellers = [
     userMail: '@TrevorP',
   },
 ];
-
-export interface NotificationData {
-  id: number | string;
-  title: string;
-  message: string;
-}
-
-export interface NftDetails {
-  id: string | number;
-  img: string;
-  title: string;
-  description: string;
-  icon?: React.ReactNode;
-  price: number;
-}

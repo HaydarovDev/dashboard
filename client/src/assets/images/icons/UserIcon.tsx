@@ -1,4 +1,4 @@
-import type { IconParam } from '../../../types/icon.types';
+import type { IconParam } from '../../../types/iconTypes';
 
 const UserIcon = ({ size, color = '#C2C3CB' }: IconParam) => {
   return (

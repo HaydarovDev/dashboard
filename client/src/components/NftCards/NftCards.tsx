@@ -3,7 +3,7 @@ import Etherium from '../../assets/images/icons/Etherium';
 import nft from '../../assets/images/nft.png';
 import './NftCards.css';
 import useTheme from '../../Context/UseTheme';
-import type { NftDetails } from '../../service/service';
+import type { NftDetails } from '../../types/iconTypes';
 
 const NftCards = () => {
   const { dark } = useTheme();
