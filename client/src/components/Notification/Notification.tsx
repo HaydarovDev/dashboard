@@ -2,7 +2,7 @@ import { useState } from 'react';
 import NotificationIcon from '../../assets/images/icons/NotificationIcon';
 import useTheme from '../../Context/UseTheme';
 import './Notification.css';
-import type { NotificationData } from '../../service/service';
+import type { NotificationData } from '../../types/iconTypes';
 
 const Notification = () => {
   const { dark } = useTheme();
