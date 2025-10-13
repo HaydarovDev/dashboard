@@ -12,7 +12,7 @@ article .notFoundPage h1 {
   font-family: "PoppinsRegular";
 }
 
-article p {
+article p.notFound {
   margin: 0;
 }
 

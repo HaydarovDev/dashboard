@@ -75,6 +75,9 @@ article.cards .cards .card_text button {
   .cardContainer {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  article.cards .cards .img {
+    height: 200px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -85,6 +88,6 @@ article.cards .cards .card_text button {
 
 @media screen and (max-width: 300px) {
   .cardContainer {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }

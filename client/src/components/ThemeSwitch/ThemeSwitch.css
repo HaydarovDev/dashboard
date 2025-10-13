@@ -14,3 +14,9 @@ header.dashboard-header button.switch {
 header.dashboard-header button.dark {
   background-color: #1f1f1f;
 }
+
+@media screen and (max-width: 767px) {
+  .switch {
+    display: none !important;
+  }
+}
