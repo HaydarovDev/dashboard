@@ -45,19 +45,3 @@ header.dashboard-header .account-details {
   gap: 10px;
 }
 
-header.dashboard-header .account-details .notification {
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15px;
-  cursor: pointer;
-  background-color: transparent;
-  border: 1px solid #121212;
-}
-
-header.dashboard-header .account-details .notification.dark {
-  background-color: #1f1f1f;
-}

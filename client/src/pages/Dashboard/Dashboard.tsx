@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import { Suspense, lazy } from 'react';
 import './Dashboard.css';
 import Loader from '../../components/Loader/Loader';
 

@@ -1,0 +1,44 @@
+.notification {
+    position: relative;
+}
+
+.notificationItems {
+    width: 280px;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.notificationItems.dark {
+    background: #1f1f1f;
+    color: white;
+}
+
+.notificationItems.active {
+    animation: top 200ms linear;
+}
+
+@keyframes top {
+    from {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.notificationBtn {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #121212;
+}

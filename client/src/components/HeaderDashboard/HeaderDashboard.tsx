@@ -1,7 +1,8 @@
-import NotificationIcon from '../../assets/images/icons/NotificationIcon';
+// import NotificationIcon from '../../assets/images/icons/NotificationIcon';
 import SearchIcon from '../../assets/images/icons/SearchIcon';
 import useTheme from '../../Context/UseTheme';
 import Account from '../Account/Account';
+import Notification from '../Notification/Notification';
 import ThemeSwitch from '../ThemeSwitch/ThemeSwitch';
 import './HeaderDashboard.css';
 
@@ -19,12 +20,7 @@ const HeaderDashboard = () => {
         />
       </label>
       <div className="account-details">
-        <button
-          className={`notification ${dark ? 'dark' : ''}`}
-          aria-label="notification"
-        >
-          <NotificationIcon color={dark ? '#f1f1f1' : '#1f1f1f'} />
-        </button>
+        <Notification />
         <ThemeSwitch />
         <Account />
       </div>
