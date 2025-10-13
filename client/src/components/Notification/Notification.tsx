@@ -32,7 +32,9 @@ const Notification = () => {
             <h4>Notification</h4>
             <div>
               {data && data?.length === 0 ? (
-                <p style={{ fontSize: '15px' }}>No data found (</p>
+                <p style={{ fontSize: '15px', textAlign: 'center' }}>
+                  No data found (
+                </p>
               ) : (
                 data?.map((message) => {
                   return (

@@ -9,7 +9,7 @@ article.notFound {
 article .notFoundPage h1 {
   font-size: 7rem;
   margin: 0;
-  font-family: 'PoppinsRegular';
+  font-family: "PoppinsRegular";
 }
 
 article p {
@@ -23,9 +23,12 @@ article .notFoundPage {
 article .notFoundPage a {
   text-decoration: none;
   color: white;
+  display: flex;
+  justify-content: center;
 }
 
-article .notFoundPage a button {
+article .notFoundPage a button.notfoundBtn {
+  width: 100%;
   padding-block: 10px;
   border-radius: 13px;
   font-size: 15px;
@@ -33,4 +36,9 @@ article .notFoundPage a button {
   align-items: center;
   justify-content: center;
   gap: 10px;
+  border: none;
+  margin-top: 10px;
+  background: #1f1f1f;
+  color: white;
+  cursor: pointer;
 }
