@@ -1,11 +1,11 @@
 .cardContainer {
-  display: flex;
-  justify-content: space-between;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 15px;
 }
 
-article.cards .cards {
-  width: 22%;
+article.cards .cardContainer .cards {
   padding: 10px;
   border-radius: 15px;
   position: relative;
@@ -78,6 +78,6 @@ article.cards .cards .card_text button {
 
 @media screen and (max-width: 991px) {
   .cardContainer {
-    flex-wrap: wrap;
+    grid-template-columns: 2fr 2fr;
   }
 }
