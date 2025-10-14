@@ -14,7 +14,7 @@ const Market = () => {
         <button>collection</button>
         <button>price</button>
       </div>
-      <div className="cardContainer">
+      <div className="marketcollection">
         {data &&
           data?.map((card) => (
             <div className={`cards ${dark ? 'dark' : ''}`} key={card.id}>

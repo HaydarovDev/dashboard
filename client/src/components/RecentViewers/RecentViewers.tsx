@@ -11,7 +11,7 @@ const RecentViewers = () => {
     <div className={`recents ${dark ? 'active' : ''}`}>
       <header>
         <h3>Recent Viewed</h3>
-        <button>
+        <button aria-label="for more">
           <MoreIcon />
         </button>
       </header>

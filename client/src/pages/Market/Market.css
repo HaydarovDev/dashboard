@@ -1,16 +1,29 @@
 article.market {
     width: 100%;
     padding: 10px;
-}
-
-.cardContainer {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    height: 91.7vh;
+    padding: 10px;
+    overflow-y: auto;
     gap: 20px;
 }
 
-article.market .cardContainer .cards {
+article.market::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+article.market::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+}
+
+.marketcollection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+}
+
+article.market .marketcollection .cards {
     padding: 10px;
     border-radius: 15px;
     position: relative;
@@ -19,7 +32,7 @@ article.market .cardContainer .cards {
     cursor: pointer;
 }
 
-article.market .cardContainer .cards.dark {
+article.market .marketcollection .cards.dark {
     box-shadow: 0 0 10px #1f1f1f;
 }
 
@@ -77,7 +90,7 @@ article.market .card_text button {
 }
 
 @media screen and (max-width: 991px) {
-    .cardContainer {
+    .marketcollection {
         grid-template-columns: 1fr 1fr 1fr;
     }
     article.market .img {
@@ -86,13 +99,13 @@ article.market .card_text button {
 }
 
 @media screen and (max-width: 767px) {
-    .cardContainer {
+    .marketcollection {
         grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (max-width: 300px) {
-    .cardContainer {
+    .marketcollection {
         grid-template-columns: 1fr 1fr;
     }
 }

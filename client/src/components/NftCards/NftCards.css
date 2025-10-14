@@ -71,23 +71,13 @@ article.cards .cards .card_text button {
   justify-content: center;
   align-items: center;
 }
-
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 767px) {
   .cardContainer {
     grid-template-columns: 1fr 1fr 1fr;
   }
-  article.cards .cards .img {
-    height: 200px;
-  }
 }
 
-@media screen and (max-width: 767px) {
-  .cardContainer {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 500px) {
   .cardContainer {
     grid-template-columns: 1fr 1fr;
   }

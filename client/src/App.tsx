@@ -10,6 +10,7 @@ import Forget from './auth/Forget/Forget';
 import Reset from './auth/ResetPassword/Reset';
 import Loader from './components/Loader/Loader';
 import NotFound from './pages/NotFound/NotFound';
+import Message from './pages/Message/Message';
 
 const Dashboard = lazy(() => import('./pages/Dashboard/Dashboard'));
 const Market = lazy(() => import('./pages/Market/Market'));
@@ -36,7 +37,7 @@ const App = () => {
             <Route index element={<Dashboard />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="market" element={<Market />} />
-            <Route path="message" element={<Market />} />
+            <Route path="message" element={<Message />} />
             <Route path="wallet" element={<Wallet />} />
             <Route path="activity" element={<Activity />} />
             <Route path="help" element={<Help />} />
