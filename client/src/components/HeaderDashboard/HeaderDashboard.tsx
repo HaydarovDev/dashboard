@@ -10,13 +10,16 @@ const HeaderDashboard = () => {
   const { dark } = useTheme();
   return (
     <header className={`dashboard-header ${dark ? 'dark' : ''}`}>
-      <label htmlFor="searchId" className={`${dark ? 'dark' : ''}`}>
-        <SearchIcon color={dark ? '#f5f5f5' : 'black'} />
+      <label
+        htmlFor="searchId"
+        className={`${dark ? 'dark' : ''} headerSaerch`}
+      >
+        <SearchIcon />
         <input
           type="text"
           placeholder="Search"
           id="searchId"
-          className={dark ? 'dark' : ''}
+          className={`headerInput ${dark ? 'dark' : ''}`}
         />
       </label>
       <div className="account-details">

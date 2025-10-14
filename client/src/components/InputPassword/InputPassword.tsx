@@ -19,7 +19,7 @@ const InputPassword = ({ id, placeholderText }: InputProps) => {
 
   return (
     <>
-      <label htmlFor={id}>
+      <label htmlFor={id} className="inputpassword">
         <LockIcon size={25} />
         <input
           type={show ? 'text' : 'password'}
