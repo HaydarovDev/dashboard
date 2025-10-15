@@ -41,7 +41,34 @@ INSTALLED_APPS = [
     "accounts",
     # Third-party apps
     "rest_framework",
+    "django_rest_passwordreset",
+    "rest_framework_simplejwt",
+    "drf_yasg",
 ]
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": [
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    ],
+}
+
+REST_AUTH = {
+    "USER_SERIALIZER": "accounts.serializers.LoginSerializer",
+}
+
+SIMPLE_JWT = {
+    "USER_ID_FIELD": "email",
+    "USERNAME_FIELD": "email",
+}
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = "azikdev23@gmail.com"
+EMAIL_HOST_PASSWORD = "tmcp rocz wnrr oqdc"
+
+AUTH_USER_MODEL = "accounts.User"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -106,7 +133,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/5.2/topics/i18n/
 
-LANGUAGE_CODE = "en-us"
+LANGUAGE_CODE = "en-US"
 
 TIME_ZONE = "UTC"
 

@@ -1,0 +1,7 @@
+/server/accounts/__pycache__
+/server/accounts/migrations
+/server/config/__pycache__
+/server/db.sqlite3
+/server/user_collections/__pycache__
+/server/user_collections/migrations
+/server/env
