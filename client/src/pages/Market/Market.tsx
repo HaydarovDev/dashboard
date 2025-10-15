@@ -51,29 +51,31 @@ const Market = () => {
           />
         </label>
       </div>
-      <div className="marketcollection">
+      <div>
         {filteredNft.length === 0 ? (
           <NotFountNft />
         ) : (
-          filteredNft &&
-          filteredNft?.map((card) => (
-            <div className={`cards ${dark ? 'dark' : ''}`} key={card.id}>
-              <div className="img">
-                <img src={card?.img} alt="not found" />
-              </div>
-              <h4>{card?.title}</h4>
-              <div className="card_text">
-                <div className="text">
-                  <p>{card?.description}</p>
-                  <span>
-                    <Etherium size={13} color={dark ? 'white' : 'black'} />
-                    {card?.price}
-                  </span>
+          <div className="marketcollection">
+            {filteredNft &&
+              filteredNft?.map((card) => (
+                <div className={`cards ${dark ? 'dark' : ''}`} key={card.id}>
+                  <div className="img">
+                    <img src={card?.img} alt="not found" />
+                  </div>
+                  <h4>{card?.title}</h4>
+                  <div className="card_text">
+                    <div className="text">
+                      <p>{card?.description}</p>
+                      <span>
+                        <Etherium size={13} color={dark ? 'white' : 'black'} />
+                        {card?.price}
+                      </span>
+                    </div>
+                    <button>PLACE BID</button>
+                  </div>
                 </div>
-                <button>PLACE BID</button>
-              </div>
-            </div>
-          ))
+              ))}
+          </div>
         )}
       </div>
     </article>

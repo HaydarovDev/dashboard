@@ -3,6 +3,7 @@ import './InputPassword.css';
 import LockIcon from '../../assets/images/icons/LockIcon';
 import EyeIcon from '../../assets/images/icons/EyeIcon';
 import OpenEyeIcon from '../../assets/images/icons/OpenEyeIcon';
+import useTheme from '../../Context/UseTheme';
 
 type InputProps = {
   id: string;
@@ -12,6 +13,7 @@ type InputProps = {
 const InputPassword = ({ id, placeholderText }: InputProps) => {
   const [password, setPassword] = useState<string>('');
   const [show, setShow] = useState<boolean>(false);
+  const { dark } = useTheme();
 
   const toggle = () => {
     setShow((prev) => !prev);
@@ -19,7 +21,7 @@ const InputPassword = ({ id, placeholderText }: InputProps) => {
 
   return (
     <>
-      <label htmlFor={id} className="inputpassword">
+      <label htmlFor={id} className={`inputpassword ${dark ? 'active' : ''}`}>
         <LockIcon size={25} />
         <input
           type={show ? 'text' : 'password'}

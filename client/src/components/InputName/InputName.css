@@ -1,3 +1,45 @@
 label.inputName {
   margin-bottom: 15px;
 }
+
+label.inputName.active {
+  background: #1f1f1f;
+}
+
+label.inputName,
+input {
+  width: 100%;
+}
+
+label.inputName:last-of-type {
+  margin-top: 15px;
+}
+
+label.inputName input::placeholder {
+  color: var(--grayClr);
+  font-size: 15px;
+}
+
+label.inputName:focus-within {
+  border: 2px solid black;
+}
+
+label.inputName input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+label.inputName.active input {
+  color: white;
+}
+
+label.inputName {
+  background: var(--bgbtn);
+  border-radius: 10px;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid transparent;
+}

@@ -24,13 +24,13 @@ const Signin = () => {
                   aria-label="sign in google"
                   className={dark ? 'dark' : ''}
                 >
-                  <GoogleIcon size={25} color={dark ? '#f5f5f5' : 'black'} />
+                  <GoogleIcon size={25} />
                 </button>
                 <button
                   aria-label="sign in apple"
                   className={dark ? 'dark' : ''}
                 >
-                  <AppleIcon size={25} color={dark ? '#f5f5f5' : 'black'} />
+                  <AppleIcon size={25} />
                 </button>
               </div>
               <span>OR</span>
