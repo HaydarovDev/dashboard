@@ -4,8 +4,8 @@ import DashboardIcon from '../../assets/images/icons/DashboardIcon';
 import MarketIcon from '../../assets/images/icons/MarketIcon';
 import MessageIcon from '../../assets/images/icons/MessageIcon';
 import WalletIcon from '../../assets/images/icons/WalletIcon';
-import ActivityIcon from '../../assets/images/icons/ActivityIcon';
 import useTheme from '../../Context/UseTheme';
+import UserIcon from '../../assets/images/icons/UserIcon';
 
 const BottomNavbar = () => {
   const { dark } = useTheme();
@@ -50,10 +50,13 @@ const BottomNavbar = () => {
           </NavLink>
         </li>
         <li>
-          <NavLink to={'activity'} className={dark ? 'dark' : ''}>
+          <NavLink to={'account'} className={dark ? 'dark' : ''}>
             {({ isActive }) => (
               <>
-                <ActivityIcon color={isActive || dark ? 'white' : 'black'} />
+                <UserIcon
+                  color={isActive || dark ? 'white' : 'black'}
+                  size={20}
+                />
               </>
             )}
           </NavLink>

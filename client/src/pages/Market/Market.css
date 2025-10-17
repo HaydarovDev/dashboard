@@ -172,6 +172,15 @@ article.market .card_text button {
     article.market {
         padding-bottom: 65px !important;
     }
+
+    article.market .searchCards {
+        flex-direction: column;
+    }
+
+    article.market label.searchNftcards {
+        width: 100%;
+        margin-top: 15px;
+    }
 }
 
 @media screen and (max-width: 500px) {
