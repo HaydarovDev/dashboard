@@ -70,6 +70,7 @@ article.cards .cards .card_text button {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 2px solid white;
 }
 @media screen and (max-width: 767px) {
   .cardContainer {
