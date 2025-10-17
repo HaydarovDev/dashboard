@@ -12,7 +12,7 @@ const BottomNavbar = () => {
 
   return (
     <nav className="bottomNav">
-      <ul>
+      <ul className={dark ? 'active' : ''}>
         <li>
           <NavLink to={'/'} className={dark ? 'dark' : ''}>
             {({ isActive }) => (

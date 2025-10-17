@@ -125,6 +125,10 @@ aside footer ul li a.dark {
   color: #ffffff;
 }
 
+aside footer ul li a.dark.active {
+  background-color: #444444;
+}
+
 aside footer ul li a.active {
   background-color: #1f1f1f;
   color: #ffffff;
