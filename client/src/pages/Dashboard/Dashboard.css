@@ -49,4 +49,8 @@
     align-items: baseline;
     gap: 10px;
   }
+
+  .dashboard {
+    padding-bottom: 65px !important;
+  }
 }

@@ -168,6 +168,10 @@ article.market .card_text button {
     .marketcollection {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    article.market {
+        padding-bottom: 65px !important;
+    }
 }
 
 @media screen and (max-width: 500px) {

@@ -6,7 +6,7 @@ nav.bottomNav {
 }
 
 nav.bottomNav ul {
-    width: 95%;
+    width: 90%;
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -39,5 +39,11 @@ nav.bottomNav ul li a.active {
 @media screen and (max-width: 991px) {
     nav.bottomNav {
         display: block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    nav.bottomNav ul {
+        width: 95%;
     }
 }
