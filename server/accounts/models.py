@@ -1,5 +1,30 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, BaseUserManager
+
+
+class CustomUserManager(BaseUserManager):
+    def create_superuser(self, email, password, **extra_fields):
+        if not email:
+            raise ValueError("Email majburiy maydon!")
+        email = self.normalize_email(email)
+        username = self.model.normalize_username(email.split("@gmail.com")[0])
+        user = self.model(email=email, username=username, **extra_fields)
+        user.set_password(password)
+        user.is_staff = True
+        user.is_active = True
+        user.is_verified = True
+        user.is_superuser = True
+        user.save(using=self._db)
+        return user
+
+    def create_user(self, email, password=None, **extra_fields):
+        if not email:
+            raise ValueError("Email majburiy maydon!")
+        email = self.normalize_email(email)
+        user = self.model(email=email, **extra_fields)
+        user.set_password(password)
+        user.save(using=self._db)
+        return user
 
 
 class Role(models.Model):
@@ -31,6 +56,9 @@ class User(AbstractUser):
         null=True,
         error_messages={"unique": "Bu telefon raqami allaqachon ro'yxatdan o'tgan."},
     )
+    collections = models.ManyToManyField(
+        "user_collections.Collection", verbose_name=("Collections")
+    )
     city = models.CharField(max_length=100, blank=True, null=True)
     country = models.CharField(max_length=100, blank=True, null=True)
     wallet_balance = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
@@ -38,52 +66,10 @@ class User(AbstractUser):
     date_joined = models.DateTimeField(auto_now_add=True)
     is_active = models.BooleanField(default=True)
 
+    objects = CustomUserManager()
+
     USERNAME_FIELD = "email"
     REQUIRED_FIELDS = []
 
     def __str__(self):
         return self.username
-
-
-class Collection(models.Model):
-    name = models.CharField(max_length=100)
-    image = models.ImageField(upload_to="collection_images/")
-    owner = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="collections"
-    )
-    price = models.DecimalField(max_digits=10, decimal_places=2)
-    description = models.TextField(blank=True, null=True)
-    stock = models.PositiveIntegerField(default=0)
-    is_active = models.BooleanField(default=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-
-    def __str__(self):
-        return self.name
-
-
-class UserPurchase(models.Model):
-    STATUS_CHOICES = [
-        ("pending", "Pending"),
-        ("completed", "Completed"),
-        ("failed", "Failed"),
-        ("refunded", "Refunded"),
-    ]
-
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="purchases")
-    collection = models.ForeignKey(
-        Collection, on_delete=models.CASCADE, related_name="purchases"
-    )
-    purchase_date = models.DateTimeField(auto_now_add=True)
-    price_paid = models.DecimalField(max_digits=10, decimal_places=2)
-    quantity = models.PositiveIntegerField(default=1)
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="pending")
-    transaction_id = models.CharField(max_length=100, blank=True, null=True)
-
-    class Meta:
-        unique_together = [
-            "user",
-            "collection",
-        ]
-
-    def __str__(self):
-        return f"{self.user.username} - {self.collection.name}"
