@@ -12,6 +12,7 @@ import Loader from './components/Loader/Loader';
 import NotFound from './pages/NotFound/NotFound';
 import Message from './pages/Message/Message';
 import UserMe from './components/UserMe/UserMe';
+import CardDetails from './components/CardDetails/CardDetails';
 
 const Dashboard = lazy(() => import('./pages/Dashboard/Dashboard'));
 const Market = lazy(() => import('./pages/Market/Market'));
@@ -44,6 +45,7 @@ const App = () => {
             <Route path="help" element={<Help />} />
             <Route path="settings" element={<Settings />} />
             <Route path="account" element={<UserMe />} />
+            <Route path="market/card/:id" element={<CardDetails />} />
           </Route>
 
           <Route path="*" element={<NotFound />} />

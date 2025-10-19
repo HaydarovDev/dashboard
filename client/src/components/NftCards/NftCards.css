@@ -5,6 +5,11 @@
   gap: 20px;
 }
 
+.cardContainer a {
+  text-decoration: none;
+  color: inherit;
+}
+
 article.cards .cardContainer .cards {
   padding: 10px;
   border-radius: 15px;

@@ -1,0 +1,30 @@
+article.cardDetails {
+    padding: 20px;
+}
+
+article.cardDetails header h3 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+article.cardDetails .product {
+    display: flex;
+    padding: 20px;
+    box-shadow: 0 0 33.45px 0px rgba(199, 199, 199, 0.6);
+    border-radius: 10px;
+    justify-content: space-between;
+}
+
+article.cardDetails .product img {
+    border-radius: 10px;
+}
+
+article.cardDetails .product .cardPrice {
+    display: flex;
+    justify-content: space-between;
+}
+
+article.cardDetails .product .details {
+    width: 40%;
+}

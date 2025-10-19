@@ -16,22 +16,24 @@ const NftCards = () => {
       <div className="cardContainer">
         {data &&
           data.slice(0, 4).map((card) => (
-            <div className={`cards ${dark ? 'active' : ''}`} key={card.id}>
-              <div className="img">
-                <img src={card?.img} alt="not found" />
-              </div>
-              <h4>{card?.title}</h4>
-              <div className="card_text">
-                <div className="text">
-                  <p>{card?.description}</p>
-                  <span>
-                    <Etherium size={13} color={dark ? 'white' : 'black'} />
-                    {card?.price}
-                  </span>
+            <Link to={`/market/card/${card.id}`}>
+              <div className={`cards ${dark ? 'active' : ''}`} key={card.id}>
+                <div className="img">
+                  <img src={card?.img} alt="not found" />
                 </div>
-                <button>PLACE BID</button>
+                <h4>{card?.title}</h4>
+                <div className="card_text">
+                  <div className="text">
+                    <p>{card?.description}</p>
+                    <span>
+                      <Etherium size={13} color={dark ? 'white' : 'black'} />
+                      {card?.price}
+                    </span>
+                  </div>
+                  <button>PLACE BID</button>
+                </div>
               </div>
-            </div>
+            </Link>
           ))}
       </div>
     </article>

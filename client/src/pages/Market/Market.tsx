@@ -8,6 +8,7 @@ import useTheme from '../../Context/UseTheme';
 import { data } from '../../service/service';
 import './Market.css';
 import NotFountNft from '../../components/NotFoundNft/NotFountNft';
+import { Link } from 'react-router-dom';
 
 const Market = () => {
   const [searchNftData, setSearchNftData] = useState<string | null>();
@@ -58,22 +59,27 @@ const Market = () => {
           <div className="marketcollection">
             {filteredNft &&
               filteredNft?.map((card) => (
-                <div className={`cards ${dark ? 'dark' : ''}`} key={card.id}>
-                  <div className="img">
-                    <img src={card?.img} alt="not found" />
-                  </div>
-                  <h4>{card?.title}</h4>
-                  <div className="card_text">
-                    <div className="text">
-                      <p>{card?.description}</p>
-                      <span>
-                        <Etherium size={13} color={dark ? 'white' : 'black'} />
-                        {card?.price}
-                      </span>
+                <Link to={`card/${card.id}`} key={card.id}>
+                  <div className={`cards ${dark ? 'dark' : ''}`}>
+                    <div className="img">
+                      <img src={card?.img} alt="not found" />
                     </div>
-                    <button>PLACE BID</button>
+                    <h4>{card?.title}</h4>
+                    <div className="card_text">
+                      <div className="text">
+                        <p>{card?.description}</p>
+                        <span>
+                          <Etherium
+                            size={13}
+                            color={dark ? 'white' : 'black'}
+                          />
+                          {card?.price}
+                        </span>
+                      </div>
+                      <button>PLACE BID</button>
+                    </div>
                   </div>
-                </div>
+                </Link>
               ))}
           </div>
         )}
