@@ -13,13 +13,12 @@ class UserAdmin(admin.ModelAdmin):
     list_display = (
         "username",
         "email",
-        "phone",
-        "city",
-        "country",
+        "is_verified",
         "date_joined",
-        "is_active",
+        "role",
+        # "is_active",
         "wallet_balance",
     )
     search_fields = ("username", "email", "phone")
-    list_filter = ("is_active", "date_joined", "city", "country")
-    readonly_fields = ("date_joined",)
+    # list_filter = ("is_active", "date_joined", "city", "country")
+    # readonly_fields = ("date_joined",)
