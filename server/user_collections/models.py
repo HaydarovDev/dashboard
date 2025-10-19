@@ -9,7 +9,6 @@ class Collection(models.Model):
     )
     price = models.DecimalField(max_digits=10, decimal_places=2)
     description = models.TextField(blank=True, null=True)
-    stock = models.PositiveIntegerField(default=0)
     is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
 
@@ -35,9 +34,7 @@ class UserPurchase(models.Model):
     )
     purchase_date = models.DateTimeField(auto_now_add=True)
     price_paid = models.DecimalField(max_digits=10, decimal_places=2)
-    quantity = models.PositiveIntegerField(default=1)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="pending")
-    transaction_id = models.CharField(max_length=100, blank=True, null=True)
 
     def __str__(self):
         return f"{self.user.username} - {self.collection.name}"

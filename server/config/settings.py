@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # Local apps
     "accounts",
-    "user_collections",
+    "user_collections.apps.UserCollectionsConfig",
     # Third-party apps
     "rest_framework",
     "django_rest_passwordreset",
