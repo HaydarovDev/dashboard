@@ -1,5 +1,17 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser, BaseUserManager
+import random
+
+
+def get_default_avatar():
+    default_avatar = {
+        "default_avatar/image1.png",
+        "default_avatar/image2.png",
+        "default_avatar/image3.png",
+        "default_avatar/image4.png",
+        "default_avatar/image5.png",
+    }
+    return random.choice(list(default_avatar))
 
 
 class CustomUserManager(BaseUserManager):
@@ -42,6 +54,9 @@ class User(AbstractUser):
         error_messages={
             "unique": "Bu foydalanuvchi nomi allaqachon ro'yxatdan o'tgan."
         },
+    )
+    image = models.ImageField(
+        upload_to="user_images/", blank=True, null=True, default=get_default_avatar
     )
     email = models.EmailField(
         unique=True,

@@ -6,3 +6,5 @@
 /server/user_collections/migrations
 /server/env
 /server/staticfiles
+/server/staticfiles_root
+/server/media

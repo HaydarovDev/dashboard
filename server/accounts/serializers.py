@@ -13,6 +13,25 @@ import random
 User = get_user_model()
 
 
+class MeSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = [
+            "id",
+            "username",
+            "image",
+            "email",
+            "phone",
+            "collections",
+            "city",
+            "country",
+            "wallet_balance",
+            "role",
+            "date_joined",
+            "is_verified",
+        ]
+
+
 class LoginSerializer(serializers.Serializer):
     email = serializers.EmailField()
     password = serializers.CharField(write_only=True)
