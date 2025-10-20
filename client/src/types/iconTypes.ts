@@ -18,4 +18,8 @@ export interface NftDetails {
   description: string;
   icon?: React.ReactNode;
   price: number;
+  about: string;
+  owner: string;
+  creator: string;
+  endin: string;
 }

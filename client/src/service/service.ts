@@ -89,6 +89,11 @@ export const data: NftDetails[] = [
     title: 'Sun-Glass',
     description: 'Current bid',
     price: 1.75,
+    about:
+      'A collection of 10,000 utility-enabled PFPs that feature a richly diverse and unique pool of rarity-powered traits.',
+    owner: '0xA12F3D9C',
+    creator: '0xB76C5A01',
+    endin: '2025-10-20',
   },
   {
     id: 2,
@@ -96,6 +101,11 @@ export const data: NftDetails[] = [
     title: 'Sun-Glass',
     description: 'Current bid',
     price: 1.75,
+    about:
+      'A collection of 10,000 utility-enabled PFPs that feature a richly diverse and unique pool of rarity-powered traits.',
+    owner: '0xF9D3A87B',
+    creator: '0xB76C5A01',
+    endin: '2025-10-20',
   },
   {
     id: 3,
@@ -103,6 +113,11 @@ export const data: NftDetails[] = [
     title: 'Sun-Glass',
     description: 'Current bid',
     price: 1.75,
+    about:
+      'A collection of 10,000 utility-enabled PFPs that feature a richly diverse and unique pool of rarity-powered traits.',
+    owner: '0xCC4E1F23',
+    creator: '0xB76C5A01',
+    endin: '2025-10-20',
   },
   {
     id: 4,
@@ -110,6 +125,11 @@ export const data: NftDetails[] = [
     title: 'NuEvey',
     description: 'Current bid',
     price: 1.25,
+    about:
+      'A collection of 10,000 utility-enabled PFPs that feature a richly diverse and unique pool of rarity-powered traits.',
+    owner: '0x7B8A34E5',
+    creator: '0xD19E8F42',
+    endin: '2025-10-20',
   },
   {
     id: 5,
@@ -117,6 +137,11 @@ export const data: NftDetails[] = [
     title: 'NuEvey',
     description: 'Current bid',
     price: 1.25,
+    about:
+      'A collection of 10,000 utility-enabled PFPs that feature a richly diverse and unique pool of rarity-powered traits.',
+    owner: '0xF123AB44',
+    creator: '0xD19E8F42',
+    endin: '2025-10-20',
   },
   {
     id: 6,
@@ -124,6 +149,11 @@ export const data: NftDetails[] = [
     title: 'Sun-Glass',
     description: 'Current bid',
     price: 1.75,
+    about:
+      'A collection of 10,000 utility-enabled PFPs that feature a richly diverse and unique pool of rarity-powered traits.',
+    owner: '0x6A9BEE72',
+    creator: '0xB76C5A01',
+    endin: '2025-10-20',
   },
   {
     id: 7,
@@ -131,6 +161,11 @@ export const data: NftDetails[] = [
     title: 'Sun-Glass',
     description: 'Current bid',
     price: 1.75,
+    about:
+      'A collection of 10,000 utility-enabled PFPs that feature a richly diverse and unique pool of rarity-powered traits.',
+    owner: '0x91C8AF12',
+    creator: '0xB76C5A01',
+    endin: '2025-10-20',
   },
   {
     id: 8,
@@ -138,6 +173,11 @@ export const data: NftDetails[] = [
     title: 'Sun-Glass',
     description: 'Current bid',
     price: 1.75,
+    about:
+      'A collection of 10,000 utility-enabled PFPs that feature a richly diverse and unique pool of rarity-powered traits.',
+    owner: '0x8A99CD67',
+    creator: '0xB76C5A01',
+    endin: '2025-10-20',
   },
   {
     id: 9,
@@ -145,6 +185,11 @@ export const data: NftDetails[] = [
     title: 'NuEvey',
     description: 'Current bid',
     price: 1.25,
+    about:
+      'A collection of 10,000 utility-enabled PFPs that feature a richly diverse and unique pool of rarity-powered traits.',
+    owner: '0x44B1E88F',
+    creator: '0xD19E8F42',
+    endin: '2025-10-20',
   },
   {
     id: 10,
@@ -152,5 +197,10 @@ export const data: NftDetails[] = [
     title: 'NuEvey',
     description: 'Current bid',
     price: 1.25,
+    about:
+      'A collection of 10,000 utility-enabled PFPs that feature a richly diverse and unique pool of rarity-powered traits.',
+    owner: '0xA781C22B',
+    creator: '0xD19E8F42',
+    endin: '2025-10-20',
   },
 ];
