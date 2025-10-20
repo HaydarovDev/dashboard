@@ -1,7 +1,7 @@
 from django.db import IntegrityError
 from django.core.mail import send_mail
 from rest_framework.decorators import api_view, permission_classes
-from rest_framework.permissions import AllowAny
+from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.generics import CreateAPIView, GenericAPIView
 from rest_framework_simplejwt.views import TokenObtainPairView
@@ -12,11 +12,33 @@ from .serializers import (
     VerifySerializer,
     ForgotPasswordSerializer,
     ResetPasswordSerializer,
+    MeSerializer,
 )
 from rest_framework import status
 from rest_framework.views import APIView
 from .models import User
-import random
+
+
+class MeView(APIView):
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request):
+        serializer = MeSerializer(request.user)
+        return Response(serializer.data, status=status.HTTP_200_OK)
+
+    def put(self, request):
+        serializer = MeSerializer(request.user, data=request.data, partial=True)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_200_OK)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request):
+        user = request.user
+        user.delete()
+        return Response(
+            {"message": "Hisob muvaffaqiyatli o'chirildi."}, status=status.HTTP_200_OK
+        )
 
 
 class MyTokenObtainPairView(TokenObtainPairView):
