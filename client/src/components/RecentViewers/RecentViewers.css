@@ -1,92 +1,92 @@
 .recents {
-    width: 100%;
-    border-radius: 25px;
-    padding: 20px;
-    background: white;
-    margin-top: 20px;
+  width: 100%;
+  border-radius: 25px;
+  padding: 20px;
+  background: white;
+  margin-top: 20px;
 }
 
 .recents.active {
-    background: #1f1f1f;
+  background: #1f1f1f;
 }
 
 .recents header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
 
 .recents header button {
-    background: none;
-    border: none;
-    cursor: pointer;
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .recents header h3 {
-    font-weight: 600;
-    margin: 0;
+  font-weight: 600;
+  margin: 0;
 }
 
 .recents .users_content .viewers_list .view_list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* margin: 20px 0; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin: 20px 0; */
 }
 
 .recents .users_content .viewers_list .view_list .view_img {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .recents .view_img .img_wrapper {
-    position: relative;
+  position: relative;
 }
 
 .recents .view_img .img_wrapper img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .recents .view_text p {
-    font-weight: 600;
-    font-size: 15px;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .recents .view_text span {
-    color: #64748b;
-    font-size: 12px;
+  color: #64748b;
+  font-size: 12px;
 }
 
 .recents .text_list {
-    text-align: right;
+  text-align: right;
 }
 
 .recents .text_list p {
-    font-weight: 600;
-    font-size: 15px;
+  font-weight: 600;
+  font-size: 15px;
 }
 
 .recents .text_list .benefit_bonus {
-    display: block;
-    font-size: 13px;
-    font-weight: 500;
+  display: block;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .recents .text_list .benefit_bonus.plus {
-    color: #22c55e;
+  color: #22c55e;
 }
 
 .recents .text_list .benefit_bonus.minus {
-    color: #ef4444;
+  color: #ef4444;
 }
 
 @media screen and (max-width: 991px) {
-    .recents {
-        margin: 0 !important;
-    }
+  .recents {
+    margin: 0 !important;
+  }
 }

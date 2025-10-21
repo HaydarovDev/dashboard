@@ -1,11 +1,11 @@
 .layoutDashboard {
-    display: "flex";
-    width: 85%;
-    flex-direction: column;
+  display: 'flex';
+  width: 85%;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 1260px) {
-    .layoutDashboard {
-        width: 100% !important;
-    }
+  .layoutDashboard {
+    width: 100% !important;
+  }
 }
