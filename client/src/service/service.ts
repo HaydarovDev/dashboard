@@ -5,7 +5,7 @@ import avatar2 from '../assets/images/avatar3.jpg';
 import avatar3 from '../assets/images/avatar4.jpg';
 import avatar4 from '../assets/images/avatar5.jpg';
 import avatar5 from '../assets/images/avatar6.jpg';
-import type { NftDetails } from '../types/iconTypes';
+import type { NftDetails, User } from '../types/iconTypes';
 
 import nft from '../assets/images/nft.png';
 import nft1 from '../assets/images/nft1.jpg';
@@ -45,37 +45,37 @@ export const viewer_list = [
 
 export const bestSellers = [
   {
-    id: Math.random() * 100,
+    id: 1,
     avatar: avatar,
     userName: 'Alex Ca.',
     userMail: '@Alexy',
   },
   {
-    id: Math.random() * 100,
+    id: 2,
     avatar: avatar1,
     userName: 'Juliya Sa.',
     userMail: '@JuliyaS',
   },
   {
-    id: Math.random() * 100,
+    id: 3,
     avatar: avatar2,
     userName: 'Juliya Sa.',
     userMail: '@JuliyaS',
   },
   {
-    id: Math.random() * 100,
+    id: 4,
     avatar: avatar3,
     userName: 'Trevor Pu.',
     userMail: '@TrevorP',
   },
   {
-    id: Math.random() * 100,
+    id: 5,
     avatar: avatar4,
     userName: 'Juliya Sa.',
     userMail: '@JuliyaS',
   },
   {
-    id: Math.random() * 100,
+    id: 6,
     avatar: avatar5,
     userName: 'Trevor Pu.',
     userMail: '@TrevorP',
@@ -202,5 +202,28 @@ export const data: NftDetails[] = [
     owner: '0xA781C22B',
     creator: '0xD19E8F42',
     endin: '2025-10-20',
+  },
+];
+
+export const users: User[] = [
+  {
+    id: 1,
+    image: '',
+    username: 'Justin Hammer',
+  },
+  {
+    id: 2,
+    image: '',
+    username: 'Layla Grum',
+  },
+  {
+    id: 3,
+    image: '',
+    username: 'John Cares',
+  },
+  {
+    id: 4,
+    image: '',
+    username: 'Sam Smith',
   },
 ];

@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'PoppinsLight';
+  font-family: "PoppinsLight";
   src: url(../../../assets/font/Poppins-Light.woff);
 }
 
@@ -51,7 +51,7 @@ aside header ul li a {
   text-decoration: none;
   padding: 10px;
   border-radius: 10px;
-  font-family: 'PoppinsLight';
+  font-family: "PoppinsLight";
   gap: 10px;
   color: black;
   transition: all 100ms ease;
@@ -108,7 +108,7 @@ aside footer ul li a {
   padding: 10px;
   border-radius: 10px;
   color: #111111;
-  font-family: 'PoppinsLight';
+  font-family: "PoppinsLight";
   gap: 10px;
   transition: all 150ms ease;
 }
@@ -119,6 +119,10 @@ aside footer ul li a:hover {
 
 aside.active footer ul li a:hover {
   background: #2d2d2d;
+}
+
+aside footer ul li a:hover {
+  background: #fefefe;
 }
 
 aside footer ul li a.dark {

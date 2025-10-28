@@ -1,0 +1,57 @@
+article.chat {
+    width: 100%;
+}
+
+article.chat header {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+article.chat header .icons {
+    display: flex;
+    gap: 15px;
+}
+
+article.chat header .icons button {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: none;
+    border: none;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+article.chat header span {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+body.dark article.chat header span {
+    border: 1px solid white;
+}
+
+article.chat header .user {
+    display: flex;
+    gap: 20px;
+}
+
+article.chat header h4,
+p {
+    margin: 0;
+}
+
+article.chat header p {
+    color: #22c55e;
+    font-size: 13px;
+}

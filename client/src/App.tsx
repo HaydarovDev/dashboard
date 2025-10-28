@@ -10,10 +10,11 @@ import Forget from './auth/Forget/Forget';
 import Reset from './auth/ResetPassword/Reset';
 import Loader from './components/Loader/Loader';
 import NotFound from './pages/NotFound/NotFound';
-import Message from './pages/Message/Message';
 import UserMe from './components/UserMe/UserMe';
-import CardDetails from './components/CardDetails/CardDetails';
+import ChatLayout from './layout/Chats/ChatLayout';
 
+const ChatUser = lazy(() => import('./components/ChatUser/ChatUser'));
+const CardDetails = lazy(() => import('./components/CardDetails/CardDetails'));
 const Dashboard = lazy(() => import('./pages/Dashboard/Dashboard'));
 const Market = lazy(() => import('./pages/Market/Market'));
 const Wallet = lazy(() => import('./pages/Wallet/Wallet'));
@@ -39,7 +40,11 @@ const App = () => {
             <Route index element={<Dashboard />} />
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="market" element={<Market />} />
-            <Route path="message" element={<Message />} />
+
+            <Route path="/message" element={<ChatLayout />}>
+              <Route path=":username" element={<ChatUser />} />
+            </Route>
+
             <Route path="wallet" element={<Wallet />} />
             <Route path="activity" element={<Activity />} />
             <Route path="help" element={<Help />} />

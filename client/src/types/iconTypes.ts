@@ -23,3 +23,9 @@ export interface NftDetails {
   creator: string;
   endin: string;
 }
+
+export interface User {
+  id: number;
+  image: string;
+  username: string;
+}
