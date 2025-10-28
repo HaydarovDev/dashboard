@@ -16,7 +16,7 @@ const NftCards = () => {
       <div className="cardContainer">
         {data &&
           data.slice(0, 4).map((card) => (
-            <Link to={`/market/card/${card.id}`}>
+            <Link to={`/market/card/${card.id}`} key={card.id}>
               <div className={`cards ${dark ? 'active' : ''}`} key={card.id}>
                 <div className="img">
                   <img src={card?.img} alt="not found" />
