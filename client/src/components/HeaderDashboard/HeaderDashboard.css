@@ -8,6 +8,10 @@ header.dashboard-header {
   gap: 10px;
 }
 
+body.dark header.dashboard-header {
+  border-bottom: 0.5px solid #1f1f1f;
+}
+
 header.dashboard-header label.headerSaerch {
   display: flex;
   align-items: center;
