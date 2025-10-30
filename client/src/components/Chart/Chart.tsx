@@ -36,7 +36,7 @@ export default function MoneyFlowChart() {
         <h2>Money Flow</h2>
         <div className="chart-controls">
           <span className="legend-dot"></span> Expenses
-          <button className="dropdown">Last 15 Days ▾</button>
+          <button className="dropdown">Last 15 Days</button>
         </div>
       </div>
 
@@ -51,12 +51,7 @@ export default function MoneyFlowChart() {
               tickLine={false}
             />
             <Tooltip content={<CustomTooltip />} cursor={false} />
-            <Bar
-              dataKey="amount"
-              radius={[6, 6, 0, 0]}
-              //   fill="#111"
-              className="bar"
-            />
+            <Bar dataKey="amount" radius={[6, 6, 0, 0]} className="bar" />
           </BarChart>
         </ResponsiveContainer>
       </div>
