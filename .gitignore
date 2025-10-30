@@ -8,3 +8,5 @@
 /server/staticfiles
 /server/staticfiles_root
 /server/media
+
+.env
