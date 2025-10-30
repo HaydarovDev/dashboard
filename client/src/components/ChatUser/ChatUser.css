@@ -127,16 +127,22 @@ article.chat footer > button {
 article.chat footer label {
     width: 100%;
     display: flex;
-    background: white;
     border-radius: 10px;
     padding: 10px 5px;
     display: flex;
     align-items: center;
+    background: #f5f5f5;
+    border: 0.5px solid black;
+}
+
+body.dark article.chat footer label {
+    background: #1f1f1f;
 }
 
 article.chat footer label input {
     outline: none;
     border: none;
+    background: none;
 }
 
 article.chat footer label button {
