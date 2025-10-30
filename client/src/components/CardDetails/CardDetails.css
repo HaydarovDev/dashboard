@@ -5,6 +5,14 @@ article.cardDetails {
   gap: 20px;
 }
 
+article.cardDetails::-webkit-scrollbar {
+  width: 3px;
+}
+
+article.cardDetails::-webkit-scrollbar-thumb {
+  background: white;
+}
+
 article.cardDetails header h3 {
   display: flex;
   align-items: center;
@@ -239,6 +247,6 @@ article.cardDetails .card_text button {
 
 @media screen and (max-width: 410px) {
   .ownerCollection {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)) !important;
+    grid-template-columns: repeat(2, 1fr) !important;
   }
 }
