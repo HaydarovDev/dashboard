@@ -21,6 +21,7 @@ const CardDetails = () => {
       <div className="product">
         <img
           width={400}
+          height={400}
           src={cardDetails?.img}
           alt="nft image"
           loading="lazy"
