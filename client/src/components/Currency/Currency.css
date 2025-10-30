@@ -1,0 +1,28 @@
+.currency .flags img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.currency .flags .flag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.currency .flags .flag .image {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.currency .flags .flag .code h3,
+p {
+    display: flex;
+    margin: 0;
+}
+
+.currency .flags .flag .code p {
+    color: #a0aec0;
+    margin-left: 2px;
+}

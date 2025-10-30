@@ -1,0 +1,11 @@
+article.walletArticle {
+    padding: 10px;
+    height: 91.7vh;
+    overflow-y: auto;
+}
+
+article.walletArticle::webkit
+
+article.walletArticle {
+    width: 65%;
+}

@@ -16,11 +16,13 @@
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
 }
 
 * {
   box-sizing: border-box;
   font-family: "PoppinsRegular";
+  -webkit-tap-highlight-color: transparent;
 }
 
 body.light {

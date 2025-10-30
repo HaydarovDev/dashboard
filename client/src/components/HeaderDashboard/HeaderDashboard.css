@@ -8,7 +8,11 @@ header.dashboard-header {
   gap: 10px;
 }
 
-header.dashboard-header label {
+body.dark header.dashboard-header {
+  border-bottom: 0.5px solid #1f1f1f;
+}
+
+header.dashboard-header label.headerSaerch {
   display: flex;
   align-items: center;
   border-radius: 10px;
@@ -19,23 +23,26 @@ header.dashboard-header label {
   border: 1px solid #121212;
 }
 
-header.dashboard-header label.dark {
+header.dashboard-header label.headerSaerch.dark {
   background: #1f1f1f;
 }
 
-header.dashboard-header label input {
+header.dashboard-header label.headerSaerch input {
+  outline: none;
   width: 100%;
+  background: none;
+  border: none;
 }
 
-header.dashboard-header label input.dark {
+header.dashboard-header label.headerSaerch input.dark {
   color: white;
 }
 
-header.dashboard-header label input::placeholder {
+header.dashboard-header label.headerSaerch input::placeholder {
   color: black;
 }
 
-header.dashboard-header.dark label input::placeholder {
+header.dashboard-header.dark label.headerSaerch input::placeholder {
   color: #f5f5f5;
 }
 
@@ -43,21 +50,4 @@ header.dashboard-header .account-details {
   display: flex;
   align-items: center;
   gap: 10px;
-}
-
-header.dashboard-header .account-details .notification {
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 15px;
-  cursor: pointer;
-  background-color: transparent;
-  border: 1px solid #121212;
-}
-
-header.dashboard-header .account-details .notification.dark {
-  background-color: #1f1f1f;
 }

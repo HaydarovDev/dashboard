@@ -10,7 +10,7 @@ const BestSellers = () => {
     <div className={`bestSellersList ${dark ? 'active' : ''}`}>
       <header>
         <h3>Best sellers</h3>
-        <button>
+        <button aria-label="more">
           <MoreIcon />
         </button>
       </header>
@@ -26,7 +26,12 @@ const BestSellers = () => {
                     <span>{user.userMail}</span>
                   </p>
                 </div>
-                <button className={`${dark ? 'active' : ''}`}>Follow</button>
+                <button
+                  className={`${dark ? 'active' : ''}`}
+                  aria-label="follow"
+                >
+                  Follow
+                </button>
               </div>
             );
           })}

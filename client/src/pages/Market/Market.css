@@ -1,0 +1,202 @@
+article.market {
+  width: 100%;
+  padding: 10px;
+  height: 91.7vh;
+  overflow-y: auto;
+  gap: 20px;
+}
+
+article.market .searchCards {
+  display: flex;
+  justify-content: space-between;
+}
+
+article.market .searchCards .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+article.market label.searchNftcards {
+  width: 250px;
+  background-color: none;
+  display: flex;
+  align-items: center;
+  background: #f5f5f5;
+  border-radius: 10px;
+  padding: 5px;
+  border: 2px solid #1f1f1f;
+}
+
+article.market label.searchNftcards.dark {
+  background: #1f1f1f;
+}
+
+article.market label.dark input.searchNftInput {
+  outline: none;
+  border: none;
+  color: white;
+  background: none;
+}
+
+article.market label input.searchNftInput {
+  outline: none;
+  border: none;
+  color: black;
+  background: none;
+}
+
+article.market .searchCards label .searchNftInput::placeholder {
+  color: black;
+}
+
+article.market .searchCards label.dark .searchNftInput::placeholder {
+  color: white;
+}
+
+article.market .buttons button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  background: none;
+  color: black;
+  border: 2px solid;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+article.market .buttons button.active {
+  color: white;
+}
+
+article.market::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+article.market::-webkit-scrollbar-thumb {
+  background: #1f1f1f;
+}
+
+.marketcollection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.marketcollection a {
+  color: inherit;
+  text-decoration: none;
+}
+
+article.market .marketcollection .cards {
+  padding: 10px;
+  border-radius: 15px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 33.45px 0px rgba(199, 199, 199, 0.6);
+  cursor: pointer;
+}
+
+article.market .marketcollection .cards.dark {
+  box-shadow: 0 0 10px #1f1f1f;
+}
+
+article.market .img {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+article.market .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+article.market h4 {
+  margin: 8px 0;
+  position: relative;
+}
+
+article.market .card_text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+article.market .card_text .text p {
+  font-size: 10px;
+  color: #94a3b8;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+article.market .card_text .text span {
+  font-size: 15px;
+  position: relative;
+}
+
+article.market .card_text button {
+  color: white;
+  font-size: 10px;
+  padding: 7px 10px;
+  cursor: pointer;
+  background: #141416;
+  border: 2px solid #141416;
+  border-radius: 8px;
+  transition: 100ms;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
+
+@media screen and (min-width: 991px) and (max-width: 1535px) {
+  .marketcollection {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .marketcollection {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .marketcollection {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  article.market {
+    padding-bottom: 65px !important;
+  }
+
+  article.market .searchCards {
+    flex-direction: column;
+  }
+
+  article.market label.searchNftcards {
+    width: 100%;
+    margin-top: 15px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .marketcollection {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .marketcollection {
+    grid-template-columns: 1fr;
+  }
+}

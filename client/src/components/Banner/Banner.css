@@ -49,3 +49,12 @@
 .banner p {
   color: #d4d4d4;
 }
+
+@media screen and (max-width: 991px) {
+  .banner .text {
+    width: 100%;
+  }
+  .banner img {
+    display: none;
+  }
+}

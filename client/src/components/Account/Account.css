@@ -13,7 +13,7 @@
   align-items: center;
   gap: 8px;
   border-radius: 15px;
-  border: 0.5px solid black;
+  border: 0.5px solid #121212;
 }
 
 .account button.account.active {
@@ -25,13 +25,19 @@
   width: 30px;
   aspect-ratio: 1/1;
   display: block;
-  background: #1f1f1f;
+  /* background: #1f1f1f; */
   display: grid;
-  color: #f1f1f1;
+  /* color: #f1f1f1; */
   font-size: 18px;
   place-items: center;
   border-radius: 50px;
   text-transform: uppercase;
+}
+
+.account button.account p {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .account button.account svg {
@@ -98,5 +104,21 @@
   }
   to {
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .account button.account p {
+    display: none;
+  }
+
+  .account button.account {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .account {
+    display: none;
   }
 }

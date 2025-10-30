@@ -8,7 +8,10 @@ import InputEmail from '../../components/InputEmail/InputEmail';
 import InputPassword from '../../components/InputPassword/InputPassword';
 import Button from '../../components/Button/Button';
 import Title from '../../components/Title/Title';
+import useTheme from '../../Context/UseTheme';
 const Signup = () => {
+  const { dark } = useTheme();
+
   return (
     <main>
       <section>
@@ -16,10 +19,18 @@ const Signup = () => {
           <div className="auth">
             <Title title="Sign Up To DiveSea" />
             <div className="auth-providers">
-              <button title="Sign in with google" aria-label="sign in google">
+              <button
+                title="Sign in with google"
+                className={dark ? 'dark' : ''}
+                aria-label="sign in google"
+              >
                 <GoogleIcon size={25} />
               </button>
-              <button title="Sign in with apple" aria-label="sign in apple">
+              <button
+                title="Sign in with apple"
+                className={dark ? 'dark' : ''}
+                aria-label="sign in apple"
+              >
                 <AppleIcon size={25} />
               </button>
             </div>

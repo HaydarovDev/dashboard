@@ -1,12 +1,11 @@
 @font-face {
-  font-family: 'PoppinsLight';
+  font-family: "PoppinsLight";
   src: url(../../../assets/font/Poppins-Light.woff);
 }
 
 aside {
   min-height: 100vh;
-  width: 100%;
-  max-width: 200px;
+  width: 15% !important;
   background: #f5f5f5;
   display: grid;
   align-content: space-between;
@@ -52,7 +51,7 @@ aside header ul li a {
   text-decoration: none;
   padding: 10px;
   border-radius: 10px;
-  font-family: 'PoppinsLight';
+  font-family: "PoppinsLight";
   gap: 10px;
   color: black;
   transition: all 100ms ease;
@@ -109,7 +108,7 @@ aside footer ul li a {
   padding: 10px;
   border-radius: 10px;
   color: #111111;
-  font-family: 'PoppinsLight';
+  font-family: "PoppinsLight";
   gap: 10px;
   transition: all 150ms ease;
 }
@@ -122,8 +121,16 @@ aside.active footer ul li a:hover {
   background: #2d2d2d;
 }
 
+aside footer ul li a:hover {
+  background: #fefefe;
+}
+
 aside footer ul li a.dark {
   color: #ffffff;
+}
+
+aside footer ul li a.dark.active {
+  background-color: #444444;
 }
 
 aside footer ul li a.active {

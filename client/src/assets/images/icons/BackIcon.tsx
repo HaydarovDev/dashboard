@@ -1,6 +1,7 @@
-import type { IconParam } from '../../../types/icon.types';
+import useTheme from '../../../Context/UseTheme';
 
-const BackIcon = ({ color }: IconParam) => {
+const BackIcon = () => {
+  const { dark } = useTheme();
   return (
     <svg
       width="24"
@@ -11,22 +12,14 @@ const BackIcon = ({ color }: IconParam) => {
     >
       <path
         d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z"
-        stroke={color}
+        stroke={dark ? 'white' : 'black'}
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <path
-        d="M8.99999 15.38H13.92C15.62 15.38 17 14 17 12.3C17 10.6 15.62 9.21997 13.92 9.21997H7.14999"
-        stroke={color}
-        strokeWidth="1.5"
-        strokeMiterlimit="10"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-      <path
-        d="M8.57 10.77L7 9.18999L8.57 7.62"
-        stroke={color}
+        d="M13.26 15.53L9.73999 12L13.26 8.46997"
+        stroke={dark ? 'white' : 'black'}
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"

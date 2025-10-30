@@ -1,67 +1,69 @@
 .bestSellersList {
-    width: 100%;
-    border-radius: 25px;
-    padding: 10px;
-    background: white;
-    border: 1px solid #edf2f7;
+  width: 100%;
+  border-radius: 25px;
+  padding: 20px;
+  background: white;
+  border: 1px solid #edf2f7;
 }
 
 .bestSellersList header button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    border: none;
-    cursor: pointer;
-    background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background: none;
 }
 
 .bestSellersList.active {
-    background: #1f1f1f;
-    border: 1px solid transparent;
+  background: #1f1f1f;
+  border: 1px solid transparent;
+}
+
+.bestSellersList header h3 {
+  margin: 0;
 }
 
 .users_content .user_id {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 10px 0;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 .users_content .user_id .user_text {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .users_content .user_id .user_text img {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .users_content .user_id .user_text p {
-    display: flex;
-    flex-direction: column;
-    font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
 }
 
 .users_content .user_id .user_text p span {
-    font-size: 13px;
-    color: #718096;
-    font-weight: 100;
+  font-size: 13px;
+  color: #718096;
+  font-weight: 100;
 }
 
 .users_content .user_id button {
-    width: 90px;
-    cursor: pointer;
-    background: transparent;
-    border-radius: 7px;
-    border: 2px solid #e6e8ec;
-    padding: 5px 10px;
-    background: transparent;
+  width: 90px;
+  cursor: pointer;
+  background: transparent;
+  border-radius: 7px;
+  border: 2px solid #e6e8ec;
+  padding: 5px 10px;
+  background: transparent;
 }
 
 .users_content .user_id button.active {
-    color: white;
+  color: white;
 }

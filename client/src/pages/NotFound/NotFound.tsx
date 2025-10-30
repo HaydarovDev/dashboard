@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import BackIcon from '../../assets/images/icons/BackIcon';
 import './NotFound.css';
+import BackIcon from '../../assets/images/icons/BackIcon';
 const NotFound = () => {
   return (
     <article className="notFound">
@@ -8,8 +8,8 @@ const NotFound = () => {
         <h1>404</h1>
         <p>Page not found :(</p>
         <Link to="/">
-          <button>
-            <BackIcon color="white" />
+          <button className="notfoundBtn">
+            <BackIcon />
             Back to home
           </button>
         </Link>

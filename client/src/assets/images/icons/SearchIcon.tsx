@@ -1,6 +1,7 @@
-import type { IconParam } from '../../../types/icon.types';
+import useTheme from '../../../Context/UseTheme';
 
-const SearchIcon = ({ color }: IconParam) => {
+const SearchIcon = () => {
+  const { dark } = useTheme();
   return (
     <svg
       width="25"
@@ -14,12 +15,12 @@ const SearchIcon = ({ color }: IconParam) => {
         cy="14"
         r="8.77942"
         transform="rotate(-45 13.5743 14)"
-        stroke={color}
+        stroke={dark ? '#f5f5f5' : 'black'}
         strokeWidth="1.6381"
       />
       <path
         d="M20.392 20.4443L24.7792 24.7288"
-        stroke={color}
+        stroke={dark ? '#f5f5f5' : 'black'}
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"

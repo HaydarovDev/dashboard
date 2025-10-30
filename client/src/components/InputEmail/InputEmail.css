@@ -1,0 +1,46 @@
+label.labelEmail,
+input {
+  width: 100%;
+}
+
+label.labelEmail.active {
+  background: #1f1f1f;
+}
+
+label.labelEmail:last-of-type {
+  margin-top: 15px;
+}
+
+label.labelEmail input::placeholder {
+  color: black;
+  font-size: 15px;
+}
+
+label.labelEmail.active input::placeholder {
+  color: white;
+  font-size: 15px;
+}
+
+label.labelEmail:focus-within {
+  border: 2px solid black;
+}
+
+label.labelEmail input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+label.labelEmail.active input {
+  color: white;
+}
+
+label.labelEmail {
+  background: var(--bgbtn);
+  border-radius: 10px;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid transparent;
+}
