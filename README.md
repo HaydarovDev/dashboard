@@ -1,3 +1,2 @@
 # Dashboard
 
-## Tech stack
