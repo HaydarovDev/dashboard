@@ -1,26 +1,27 @@
 @font-face {
-  font-family: 'PoppinsExtraLight';
+  font-family: "PoppinsExtraLight";
   src: url(./assets/font/Poppins-ExtraLight.woff);
 }
 
 @font-face {
-  font-family: 'PoppinsLight';
+  font-family: "PoppinsLight";
   src: url(./assets/font/Poppins-Light.woff);
 }
 
 @font-face {
-  font-family: 'PoppinsRegular';
+  font-family: "PoppinsRegular";
   src: url(./assets/font/Poppins-Regular.woff);
 }
 
 body {
   margin: 0;
   padding: 0;
+  /* min-height: 100vh; */
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'PoppinsRegular';
+  font-family: "PoppinsRegular";
   -webkit-tap-highlight-color: transparent;
 }
 
