@@ -4,7 +4,13 @@ article.walletArticle {
     overflow-y: auto;
 }
 
-article.walletArticle::webkit
+article.walletArticle::-webkit-scrollbar {
+    width: 5px;
+}
+
+article.walletArticle::-webkit-scrollbar {
+    background: white;
+}
 
 article.walletArticle {
     width: 65%;
