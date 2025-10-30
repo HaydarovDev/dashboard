@@ -227,6 +227,9 @@ article.cardDetails .card_text button {
   .ownerCollection {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+  article.cardDetails .product {
+    padding: 7px;
+  }
 }
 
 @media screen and (min-width: 991px) and (max-width: 1535px) {
