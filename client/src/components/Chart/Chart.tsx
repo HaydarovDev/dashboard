@@ -35,7 +35,8 @@ export default function MoneyFlowChart() {
       <div className="chart-header">
         <h2>Money Flow</h2>
         <div className="chart-controls">
-          <span className="legend-dot"></span> Expenses
+          <span className="legend-dot"></span>
+          Expenses
           <button className="dropdown">Last 15 Days</button>
         </div>
       </div>

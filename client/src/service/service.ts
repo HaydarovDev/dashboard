@@ -5,13 +5,17 @@ import avatar2 from '../assets/images/avatar3.jpg';
 import avatar3 from '../assets/images/avatar4.jpg';
 import avatar4 from '../assets/images/avatar5.jpg';
 import avatar5 from '../assets/images/avatar6.jpg';
-import type { NftDetails, User } from '../types/iconTypes';
+import type { Currency, NftDetails, User } from '../types/iconTypes';
 
 import nft from '../assets/images/nft.png';
 import nft1 from '../assets/images/nft1.jpg';
 import nft2 from '../assets/images/nft2.jpg';
 import nft3 from '../assets/images/nft3.png';
 import nft4 from '../assets/images/nft4.png';
+
+import flag1 from '../assets/images/euro.png';
+import flag2 from '../assets/images/unitedkingdom.png';
+import flag3 from '../assets/images/usa.png';
 
 export const viewer_list = [
   {
@@ -225,5 +229,32 @@ export const users: User[] = [
     id: 4,
     image: '',
     username: 'Sam Smith',
+  },
+];
+
+export const currencies: Currency[] = [
+  {
+    id: 1,
+    code: 'USD',
+    name: 'US Dollar',
+    amount: 56476.0,
+    formatted: '56,476.00',
+    flag: flag1,
+  },
+  {
+    id: 2,
+    code: 'EUR',
+    name: 'Euro',
+    amount: 49973.67,
+    formatted: '49,973.67',
+    flag: flag2,
+  },
+  {
+    id: 3,
+    code: 'GBP',
+    name: 'British Pound',
+    amount: 45098.56,
+    formatted: '45,098.56',
+    flag: flag3,
   },
 ];

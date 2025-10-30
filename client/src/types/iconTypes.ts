@@ -29,3 +29,12 @@ export interface User {
   image: string;
   username: string;
 }
+
+export interface Currency {
+  id: number;
+  code: string;
+  name: string;
+  amount: number;
+  formatted: string;
+  flag: string;
+}
