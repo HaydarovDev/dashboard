@@ -22,7 +22,7 @@ article.cardDetails header h3 {
 
 article.cardDetails .product {
   display: flex;
-  padding: 20px;
+  padding: 10px;
   box-shadow: 0 0 33.45px 0px rgba(199, 199, 199, 0.6);
   border-radius: 20px;
   justify-content: space-between;
@@ -208,6 +208,10 @@ article.cardDetails .card_text button {
 @media screen and (max-width: 500px) {
   .ownerCollection {
     grid-template-columns: repeat(2, 1fr);
+  }
+  article.cardDetails .product img {
+    width: 250px;
+    height: 250px;
   }
 }
 
