@@ -4,6 +4,11 @@
   padding: 20px;
   background: white;
   margin-top: 20px;
+  border: 1px solid #edf2f7;
+}
+
+body.dark .recents {
+  border: 1px solid #1f1f1f;
 }
 
 .recents.active {
