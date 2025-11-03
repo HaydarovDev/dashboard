@@ -1,0 +1,24 @@
+.creditCard {
+    width: 100%;
+    box-shadow: 0 18px 28px #191c321a;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.creditCard .cardTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.creditCard .cardTitle button {
+    rotate: 90deg;
+    border: none;
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.creditCard .card {
+    background: #141416;
+}

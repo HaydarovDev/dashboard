@@ -1,7 +1,10 @@
-import Balance from '../../components/Balance/Balance';
-import MoneyFlowChart from '../../components/Chart/Chart';
-import Currency from '../../components/Currency/Currency';
+import { lazy } from 'react';
+const Balance = lazy(() => import('../../components/Balance/Balance'));
+const MoneyFlowChart = lazy(() => import('../../components/Chart/Chart'));
+const Conversion = lazy(() => import('../../components/Conversion/Conversion'));
+const Currency = lazy(() => import('../../components/Currency/Currency'));
 import './Wallet.css';
+import Card from '../../components/Card/Card';
 
 const Wallet = () => {
   return (
@@ -9,11 +12,14 @@ const Wallet = () => {
       <div className="balans">
         <Balance />
         <MoneyFlowChart />
-        <div>
+        <div className="content">
           <Currency />
+          <Conversion />
         </div>
       </div>
-      <div className="wallet"></div>
+      <div className="wallet">
+        <Card />
+      </div>
     </article>
   );
 };

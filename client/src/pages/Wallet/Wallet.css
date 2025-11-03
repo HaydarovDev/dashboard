@@ -1,7 +1,10 @@
 article.walletArticle {
+    width: 100%;
     padding: 10px;
     height: 91.7vh;
     overflow-y: auto;
+    display: flex;
+    gap: 20px;
 }
 
 article.walletArticle::-webkit-scrollbar {
@@ -12,6 +15,36 @@ article.walletArticle::-webkit-scrollbar {
     background: white;
 }
 
-article.walletArticle {
-    width: 65%;
+article.walletArticle .balans .content {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+article.walletArticle .balans {
+    width: 70%;
+}
+
+article.walletArticle .wallet {
+    width: 30%;
+}
+
+@media screen and (max-width: 991px) {
+    article.walletArticle {
+        flex-direction: column;
+    }
+    article.walletArticle .balans {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    article.walletArticle .balans .content {
+        flex-direction: column;
+    }
+
+    article.walletArticle .balans .content .currency,
+    .conversion {
+        width: 100% !important;
+    }
 }

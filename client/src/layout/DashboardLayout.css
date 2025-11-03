@@ -1,5 +1,5 @@
 .layoutDashboard {
-  display: 'flex';
+  display: flex;
   width: 85%;
   flex-direction: column;
 }
