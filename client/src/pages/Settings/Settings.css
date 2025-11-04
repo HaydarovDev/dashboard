@@ -42,3 +42,64 @@ article.settings .userProfile .buttons button:hover {
     background: #1f1f1f;
     color: white;
 }
+
+article.settings .formValidation {
+    margin-top: 20px;
+    display: grid;
+    gap: 15px;
+}
+
+article.settings .formValidation label {
+    padding: 15px 10px;
+    background: #f7f7f7;
+    display: flex;
+    border-radius: 10px;
+}
+
+article.settings .formValidation label > button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+article.settings .formValidation label input {
+    outline: none;
+    border: none;
+    background: none;
+    color: white;
+}
+
+body.dark article.settings .formValidation label input {
+    color: black;
+}
+
+body.dark article.settings .formValidation label input::placeholder {
+    color: white;
+}
+
+body.dark article.settings .formValidation label {
+    background: #1f1f1f;
+}
+
+article.settings .formValidation > button {
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background: #1f1f1f;
+    color: white;
+}
+
+@media screen and (max-width: 370px) {
+    article.settings .userProfile {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    article.settings .userProfile > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
