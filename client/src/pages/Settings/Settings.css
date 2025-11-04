@@ -1,0 +1,44 @@
+article.settings {
+    padding: 10px;
+}
+
+article.settings .userProfile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+article.settings .userProfile h1 {
+    margin: 0 0 10px 0;
+}
+
+article.settings .userProfile img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+article.settings .userProfile .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+article.settings .userProfile .buttons button {
+    padding: 7px 10px;
+    border-radius: 7px;
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    background: white;
+    transition: 100ms;
+}
+
+body.dark article.settings .userProfile .buttons button {
+    background: #1f1f1f;
+    color: white;
+    border: 1px solid #1f1f1f;
+}
+
+article.settings .userProfile .buttons button:hover {
+    background: #1f1f1f;
+    color: white;
+}

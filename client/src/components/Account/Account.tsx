@@ -34,7 +34,7 @@ const Account = () => {
         <div
           className={`headersubmenu ${active ? 'active' : ''} ${dark ? 'dark' : ''}`}
         >
-          <NavLink to="" className={dark ? 'dark' : ''}>
+          <NavLink to="/settings" className={dark ? 'dark' : ''}>
             Profile settings
           </NavLink>
           <NavLink to="" className={dark ? 'dark' : ''}>
@@ -48,7 +48,7 @@ const Account = () => {
             <UserIcon size={18} color={dark ? 'white' : 'black'} />
             My account
           </NavLink>
-          <NavLink to="" className={dark ? 'dark' : ''}>
+          <NavLink to="/auth/signin" className={dark ? 'dark' : ''}>
             Logout
           </NavLink>
         </div>
