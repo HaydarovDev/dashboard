@@ -1,118 +1,118 @@
 article.chats {
-    width: 100%;
-    display: flex;
-    height: 91.7vh;
-    overflow-y: auto;
+  width: 100%;
+  display: flex;
+  height: 91.7vh;
+  overflow-y: auto;
 }
 
 article.chats .users {
-    width: 400px;
-    overflow-y: auto;
-    border-right: 0.5px solid #121212;
+  width: 400px;
+  overflow-y: auto;
+  border-right: 0.5px solid #121212;
 }
 
 body.dark article.chats .users {
-    border-right: 0.5px solid #1f1f1f;
+  border-right: 0.5px solid #1f1f1f;
 }
 
 article.chats .users label {
-    display: flex;
-    border: 1px solid #121212;
-    padding: 10px 10px;
-    border-radius: 12px;
-    width: 100%;
+  display: flex;
+  border: 1px solid #121212;
+  padding: 10px 10px;
+  border-radius: 12px;
+  width: 100%;
 }
 
 article.chats .users label input {
-    border: none;
-    outline: none;
-    background: none;
+  border: none;
+  outline: none;
+  background: none;
 }
 
 body.dark article.chats .users label input::placeholder {
-    color: white;
+  color: white;
 }
 
 article.chats .users label input::placeholder {
-    color: black;
+  color: black;
 }
 
 body.dark article.chats .users label input {
-    color: white;
+  color: white;
 }
 
 body.dark article.chats .users label {
-    background: #1f1f1f;
-    border: none;
+  background: #1f1f1f;
+  border: none;
 }
 
 article.chats .users .userlist {
-    user-select: none;
+  user-select: none;
 }
 
 article.chats .users .userlist span {
-    width: 40px;
-    height: 40px;
-    border: 1px solid black;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: black;
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
 
 body.dark article.chats .users .userlist span {
-    color: white;
-    border: 1px solid white;
+  color: white;
+  border: 1px solid white;
 }
 
 article.chats .users .userlist a {
-    padding-block: 10px;
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding-left: 5px;
-    position: relative;
+  padding-block: 10px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding-left: 5px;
+  position: relative;
 }
 
 article.chats .users .userlist a::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 0;
-    background: #1f1f1f;
-    border-radius: 0 4px 4px 0;
-    transition: 100ms;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: #1f1f1f;
+  border-radius: 0 4px 4px 0;
+  transition: 100ms;
 }
 
 article.chats .users .userlist a.active::before {
-    width: 3px;
+  width: 3px;
 }
 
 article.chats .users .userlist a:hover {
-    background: #f5f5f5;
+  background: #f5f5f5;
 }
 
 body.dark article.chats .users .userlist a:hover {
-    background: #1f1f1f;
+  background: #1f1f1f;
 }
 
 body.dark article.chats .users .userlist a {
-    color: white;
+  color: white;
 }
 
 article.chats .users .userlist a .userdetails {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 @media screen and (max-width: 991px) {
-    .users {
-        width: 100% !important;
-        border: none !important;
-    }
+  .users {
+    width: 100% !important;
+    border: none !important;
+  }
 }

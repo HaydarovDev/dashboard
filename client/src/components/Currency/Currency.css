@@ -1,40 +1,40 @@
 .currency {
-    width: 50%;
-    border: 0.5px solid #edf2f7;
-    border-radius: 15px;
-    padding: 10px;
+  width: 50%;
+  border: 0.5px solid #edf2f7;
+  border-radius: 15px;
+  padding: 10px;
 }
 
 body.dark .currency {
-    border: 0.5px solid #1f1f1f;
-    background: #1f1f1f;
+  border: 0.5px solid #1f1f1f;
+  background: #1f1f1f;
 }
 
 .currency .flags img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .currency .flags .flag {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .currency .flags .flag .image {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .currency .flags .flag .code h3,
 p {
-    display: flex;
-    margin: 0;
+  display: flex;
+  margin: 0;
 }
 
 .currency .flags .flag .code p {
-    color: #a0aec0;
-    margin-left: 2px;
+  color: #a0aec0;
+  margin-left: 2px;
 }

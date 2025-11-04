@@ -1,27 +1,27 @@
 .balanceCard {
-    width: 300px;
-    box-shadow: 10px 10px 50px #1414161a;
-    border-radius: 20px;
-    padding: 10px;
-    background: white;
+  width: 300px;
+  box-shadow: 10px 10px 50px #1414161a;
+  border-radius: 20px;
+  padding: 10px;
+  background: white;
 }
 
 body.dark .balanceCard {
-    background: #1f1f1f;
+  background: #1f1f1f;
 }
 
 .balanceCard h3 {
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .balanceCard p {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .balanceCard p span:last-child {
-    color: #718096;
+  color: #718096;
 }
