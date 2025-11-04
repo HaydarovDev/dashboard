@@ -67,11 +67,11 @@ article.settings .formValidation label input {
     outline: none;
     border: none;
     background: none;
-    color: white;
+    color: black;
 }
 
 body.dark article.settings .formValidation label input {
-    color: black;
+    color: white;
 }
 
 body.dark article.settings .formValidation label input::placeholder {
