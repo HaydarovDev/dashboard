@@ -18,6 +18,11 @@ article.collection header label {
     border-radius: 10px;
 }
 
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
 body.dark article.collection header label {
     background: #1f1f1f;
 }
@@ -127,4 +132,19 @@ article.collection div.collection img {
 
 .percent {
     color: #22c55e;
+}
+
+@media screen and (max-width: 767px) {
+    article.collection header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article.collection header label {
+        width: 100%;
+    }
+    article.collection header .buttons {
+        width: 100%;
+        margin-top: 10px;
+    }
 }
