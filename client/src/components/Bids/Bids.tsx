@@ -4,15 +4,14 @@ import Category from '../../assets/images/icons/Category';
 import Collection from '../../assets/images/icons/Collection';
 import DollarIcon from '../../assets/images/icons/DollarIcon';
 import SearchIcon from '../../assets/images/icons/SearchIcon';
-import { useState } from 'react';
+// import { useState } from 'react';
 import Etherium from '../../assets/images/icons/Etherium';
 import NotFountNft from '../NotFoundNft/NotFountNft';
 import { data } from '../../service/service';
 import { Link } from 'react-router-dom';
 
 const Bids = () => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [searchNftData, setSearchNftData] = useState<string | null>('');
+  // const [searchNftData, setSearchNftData] = useState<string | null>('');
 
   return (
     <article className="activities">
@@ -39,7 +38,7 @@ const Bids = () => {
             type="text"
             placeholder="Search nft..."
             id="searchNft"
-            onChange={(e) => setSearchNftData(e.target.value)}
+            // onChange={(e) => setSearchNftData(e.target.value)}
           />
         </label>
       </div>

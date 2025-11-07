@@ -64,7 +64,7 @@ article .custom-table th {
   color: #1f1f1f;
 }
 
-.collection {
+article .collection {
   display: flex;
   align-items: center;
   gap: 12px;

@@ -1,15 +1,13 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import FilterIcon from '../../assets/images/icons/FilterIcon';
 import SearchIcon from '../../assets/images/icons/SearchIcon';
 import { tableData } from '../../service/service';
 import './Collection.css';
 
 const Collection = () => {
-  const [value, setValue] = useState<string | null>('');
+  // const [value, setValue] = useState<string | null>('');
 
-  const handleSearch = () => {
-    
-  }
+  // const handleSearch = () => {};
 
   return (
     <article className="collection">
