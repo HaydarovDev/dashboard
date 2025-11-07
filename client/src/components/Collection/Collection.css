@@ -62,8 +62,16 @@ body.dark article.collection header label input {
     color: white;
 }
 
+.table-wrapper::-webkit-scrollbar {
+    width: 3px;
+}
+
 article.collection::-webkit-scrollbar {
     width: 3px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
 }
 
 article.collection::-webkit-scrollbar-thumb {
