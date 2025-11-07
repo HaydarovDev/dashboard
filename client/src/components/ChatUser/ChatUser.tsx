@@ -87,6 +87,7 @@ const ChatUser = () => {
             placeholder="Message"
             id="inputchat"
             onKeyDown={handleSubmit}
+            autoFocus
           />
           <button onClick={() => handleSubmit()}>
             <SendIcon />

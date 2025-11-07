@@ -1,7 +1,7 @@
 import useTheme from '../../../Context/UseTheme';
 import type { IconParam } from '../../../types/iconTypes';
 
-const Etherium = ({ size, color }: IconParam) => {
+const Etherium = ({ size }: IconParam) => {
   const { dark } = useTheme();
 
   return (
@@ -14,7 +14,7 @@ const Etherium = ({ size, color }: IconParam) => {
     >
       <path
         d="M6.5 0L0 10.2439L6.5 13.9024L13 10.2439L6.5 0ZM0 11.4634L6.5 20L13 11.4634L6.5 15.122L0 11.4634Z"
-        fill={color && dark ? 'white' : 'black'}
+        fill={dark ? 'white' : 'black'}
       />
     </svg>
   );

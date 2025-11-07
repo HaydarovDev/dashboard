@@ -1,0 +1,202 @@
+article.activities {
+    width: 100%;
+    padding: 10px;
+    height: 91.7vh;
+    overflow-y: auto;
+    gap: 20px;
+}
+
+article.activities .searchCards {
+    display: flex;
+    justify-content: space-between;
+}
+
+article.activities .searchCards .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+article.activities label.searchNftcards {
+    width: 250px;
+    background-color: none;
+    display: flex;
+    align-items: center;
+    background: #f5f5f5;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid #1f1f1f;
+}
+
+body.dark article.activities label.searchNftcards {
+    background: #1f1f1f;
+}
+
+body.dark article.activities label input.searchNftInput {
+    outline: none;
+    border: none;
+    color: white;
+    background: none;
+}
+
+article.activities label input.searchNftInput {
+    outline: none;
+    border: none;
+    color: black;
+    background: none;
+}
+
+article.activities .searchCards label .searchNftInput::placeholder {
+    color: black;
+}
+
+body.dark article .searchCards label .searchNftInput::placeholder {
+    color: white;
+}
+
+article.activities .buttons button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 10px;
+    background: none;
+    color: black;
+    border: 2px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+body.dark article.activities .buttons button {
+    color: white;
+}
+
+article.activities::-webkit-scrollbar {
+    width: 5px;
+    background-color: transparent;
+}
+
+article.activities::-webkit-scrollbar-thumb {
+    background: #1f1f1f;
+}
+
+.marketcollection {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.marketcollection a {
+    color: inherit;
+    text-decoration: none;
+}
+
+article.activities .marketcollection .cards {
+    padding: 10px;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 33.45px 0px rgba(199, 199, 199, 0.6);
+    cursor: pointer;
+}
+
+body.dark article.activities .marketcollection .cards {
+    box-shadow: 0 0 10px #1f1f1f;
+}
+
+article.activities .img {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+article.activities .img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+article.activities h4 {
+    margin: 8px 0;
+    position: relative;
+}
+
+article.activities .card_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+article.activities .card_text .text p {
+    font-size: 10px;
+    color: #94a3b8;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+article.activities .card_text .text span {
+    font-size: 15px;
+    position: relative;
+}
+
+article.activities .card_text button {
+    color: white;
+    font-size: 10px;
+    padding: 7px 10px;
+    cursor: pointer;
+    background: #141416;
+    border: 2px solid #141416;
+    border-radius: 8px;
+    transition: 100ms;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+@media screen and (min-width: 991px) and (max-width: 1535px) {
+    .marketcollection {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .marketcollection {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .marketcollection {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    article {
+        padding-bottom: 65px !important;
+    }
+
+    article .searchCards {
+        flex-direction: column;
+    }
+
+    article label.searchNftcards {
+        width: 100%;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .marketcollection {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .marketcollection {
+        grid-template-columns: 1fr;
+    }
+}

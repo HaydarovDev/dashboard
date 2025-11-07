@@ -77,7 +77,7 @@ article.chats .users .userlist a {
 }
 
 article.chats .users .userlist a::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;

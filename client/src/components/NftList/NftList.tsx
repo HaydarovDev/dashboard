@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 import './NftList.css';
 import useTheme from '../../Context/UseTheme';
+import { tableData } from '../../service/service';
+
 const NftList = () => {
   const { dark } = useTheme();
   return (
@@ -24,47 +26,25 @@ const NftList = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>
-                <div className="collection">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFBsXu_2-fEkO1O0VjkyACrjkySMbSlupyAA&s"
-                    loading="lazy"
-                    alt="avatar"
-                  />
-                  <div>
-                    <p className="name">Alex Ca.</p>
-                    <p className="author">By Alex</p>
-                  </div>
-                </div>
-              </td>
-              <td>8,456</td>
-              <td className="percent">+27.78%</td>
-              <td>3,5</td>
-              <td>2,2K</td>
-              <td>500</td>
-            </tr>
-
-            <tr>
-              <td>
-                <div className="collection">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFBsXu_2-fEkO1O0VjkyACrjkySMbSlupyAA&s"
-                    loading="lazy"
-                    alt="avatar"
-                  />
-                  <div>
-                    <p className="name">John Doe</p>
-                    <p className="author">By John</p>
-                  </div>
-                </div>
-              </td>
-              <td>4,780</td>
-              <td className="percent">+19.22%</td>
-              <td>7,9</td>
-              <td>3,4K</td>
-              <td>900</td>
-            </tr>
+            {tableData &&
+              tableData.slice(0, 2).map((item) => (
+                <tr key={item.id}>
+                  <td>
+                    <div className="collection">
+                      <img src={item.img} loading="lazy" alt="avatar" />
+                      <div>
+                        <p className="name">{item.name}</p>
+                        <p className="author">{item.author}</p>
+                      </div>
+                    </div>
+                  </td>
+                  <td>{item.volume}</td>
+                  <td className="percent">{item.percent}</td>
+                  <td>{item.floor}</td>
+                  <td>{item.owners}</td>
+                  <td>{item.items}</td>
+                </tr>
+              ))}
           </tbody>
         </table>
       </div>

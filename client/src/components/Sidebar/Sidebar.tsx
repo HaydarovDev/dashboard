@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import './Sidebar.css';
 import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../assets/images/icons/Logo';
@@ -11,7 +12,18 @@ import HelpIcon from '../../assets/images/icons/HelpIcon';
 import SettingsIcon from '../../assets/images/icons/SettingsIcon';
 
 const Sidebar = () => {
+  const [active, setActive] = useState<boolean>(false);
   const { dark } = useTheme();
+
+  useEffect(() => {
+    if (active) localStorage.setItem('active', 'active');
+    const saved = localStorage.getItem('active');
+    if (saved === 'active') setActive(true);
+  }, [active]);
+
+  const handleClick = () => {
+    setActive((prev) => !prev);
+  };
 
   return (
     <aside className={dark ? 'active' : ''}>
@@ -62,7 +74,11 @@ const Sidebar = () => {
             </NavLink>
           </li>
           <li>
-            <NavLink to={'activity'} className={dark ? 'dark' : ''}>
+            <NavLink
+              to={'activity/activities'}
+              className={`activeBids ${dark ? 'dark' : ''}`}
+              onClick={() => handleClick()}
+            >
               {({ isActive }) => (
                 <>
                   <ActivityIcon color={isActive || dark ? 'white' : 'black'} />
@@ -70,6 +86,18 @@ const Sidebar = () => {
                 </>
               )}
             </NavLink>
+
+            {active && (
+              <div className={`activityBids ${active ? 'active' : ''}`}>
+                <NavLink to="activity/activities">Active Bids</NavLink>
+                <NavLink to="activity/collection">
+                  {/* {({ isActive }) => {
+                    return isActive ? setActive(true) : setActive(false);
+                  }} */}
+                  Collection
+                </NavLink>
+              </div>
+            )}
           </li>
         </ul>
       </header>

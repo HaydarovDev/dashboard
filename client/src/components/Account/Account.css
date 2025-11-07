@@ -25,9 +25,7 @@
   width: 30px;
   aspect-ratio: 1/1;
   display: block;
-  /* background: #1f1f1f; */
   display: grid;
-  /* color: #f1f1f1; */
   font-size: 18px;
   place-items: center;
   border-radius: 50px;

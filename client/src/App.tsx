@@ -13,6 +13,8 @@ import NotFound from './pages/NotFound/NotFound';
 import UserMe from './components/UserMe/UserMe';
 import ChatLayout from './layout/Chats/ChatLayout';
 
+const Bids = lazy(() => import('./components/Bids/Bids'));
+const Collection = lazy(() => import('./components/Collection/Collection'));
 const ChatUser = lazy(() => import('./components/ChatUser/ChatUser'));
 const CardDetails = lazy(() => import('./components/CardDetails/CardDetails'));
 const Dashboard = lazy(() => import('./pages/Dashboard/Dashboard'));
@@ -44,6 +46,9 @@ const App = () => {
             <Route path="/message" element={<ChatLayout />}>
               <Route path=":username" element={<ChatUser />} />
             </Route>
+
+            <Route path="activity/activities" element={<Bids />} />
+            <Route path="activity/collection" element={<Collection />} />
 
             <Route path="wallet" element={<Wallet />} />
             <Route path="activity" element={<Activity />} />
