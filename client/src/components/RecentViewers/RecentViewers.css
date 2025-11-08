@@ -60,6 +60,7 @@ body.dark .recents {
 .recents .view_text p {
   font-weight: 600;
   font-size: 15px;
+  margin: 12px 0;
 }
 
 .recents .view_text span {

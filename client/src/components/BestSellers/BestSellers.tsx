@@ -7,7 +7,7 @@ const BestSellers = () => {
   const { dark } = useTheme();
 
   return (
-    <div className={`bestSellersList ${dark ? 'active' : ''}`}>
+    <article className={`bestSellersList ${dark ? 'active' : ''}`}>
       <header>
         <h3>Best sellers</h3>
         <button aria-label="more">
@@ -36,7 +36,7 @@ const BestSellers = () => {
             );
           })}
       </div>
-    </div>
+    </article>
   );
 };
 

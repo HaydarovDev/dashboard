@@ -10,9 +10,9 @@ import Forget from './auth/Forget/Forget';
 import Reset from './auth/ResetPassword/Reset';
 import Loader from './components/Loader/Loader';
 import NotFound from './pages/NotFound/NotFound';
-import UserMe from './components/UserMe/UserMe';
 import ChatLayout from './layout/Chats/ChatLayout';
 
+const UserMe = lazy(() => import('./components/UserMe/UserMe'));
 const Bids = lazy(() => import('./components/Bids/Bids'));
 const Collection = lazy(() => import('./components/Collection/Collection'));
 const ChatUser = lazy(() => import('./components/ChatUser/ChatUser'));

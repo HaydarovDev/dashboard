@@ -1,21 +1,25 @@
+import { lazy, Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
-import UsersList from '../../components/UsersList/UsersList';
 import './ChatLayout.css';
+import Loader from '../../components/Loader/Loader';
+const UsersList = lazy(() => import('../../components/UsersList/UsersList'));
 
 const ChatLayout = () => {
   return (
-    <article className="chats">
-      <div className="users">
-        <h2>Users</h2>
-        {/* <label htmlFor="search" className="">
+    <Suspense fallback={<Loader />}>
+      <article className="chats">
+        <div className="users">
+          <h2>Users</h2>
+          {/* <label htmlFor="search" className="">
           <SearchIcon />
           <input type="text" placeholder="Search..." id="search" />
         </label> */}
-        <UsersList />
-      </div>
+          <UsersList />
+        </div>
 
-      <Outlet />
-    </article>
+        <Outlet />
+      </article>
+    </Suspense>
   );
 };
 
